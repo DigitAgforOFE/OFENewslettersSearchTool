@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/<username>/OFENewslettersSearchTool/schema/database.schema.json",
+  "title": "OFE Newsletters Search Tool database",
+  "description": "The public dataset behind the OFE Newsletters Search Tool. One row per curated newsletter item, currently sourced from the ISPA OFE Community (OFE-C) newsletter.",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "count", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "description": "Version of this schema the file was written against, e.g. \"1.0\"."
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp of when this export was generated, ISO 8601 (e.g. 2026-09-03T20:00:00Z)."
+    },
+    "version": {
+      "type": "string",
+      "description": "Human-facing build label for this snapshot, typically a date (e.g. 2026-09-03)."
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of entries in `items`. Must match items.length exactly, validate_data.py checks this."
+    },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/item" }
+    }
+  },
+  "definitions": {
+    "item": {
+      "type": "object",
+      "required": ["id", "title", "summary", "contentType", "topics", "locations", "croppingSystems"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^OFE-[0-9]{3,4}$",
+          "description": "Stable ID, matches the Item ID assigned in the Notion database. Never reused, never renumbered."
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string" },
+        "url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Best available public link: the original if live, a working replacement if not, or null if nothing publishable exists."
+        },
+        "urlStatus": {
+          "type": "string",
+          "enum": ["live", "alternate", "archived", "unavailable"],
+          "description": "live = original link works. alternate = original died, a different working page is shown instead. archived = the link is a Wayback Machine copy of the original. unavailable = no working link exists; the UI should show the item without a link rather than a dead one."
+        },
+        "publishDate": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "The date of the newsletter issue the item first appeared in."
+        },
+        "contentType": {
+          "type": ["string", "null"],
+          "enum": [
+            "Article or paper", "Report or guide", "Project or network profile", "Event",
+            "Community notice", "Video", "Call for papers", "Data tool", "Job posting",
+            "Survey", "Podcast", "Award"
+          ],
+          "description": "Single-select, controlled vocabulary. Add a new value here (and in Notion's schema) before it can appear in an export, this is intentional, it keeps the filter list from drifting."
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Farmer engagement & co-design", "Community building", "Experimental design & methodology",
+              "Networks & platforms", "Sustainability/SDGs", "Data analysis tools", "AgTech & AI",
+              "Data governance & sharing", "Soil health", "Policy"
+            ]
+          },
+          "description": "Controlled multi-select, matches the Topic tags options declared in Notion."
+        },
+        "locations": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Open vocabulary (countries, regions, or sub-national areas). Not enum-constrained here by design, new places are expected over time; validate_data.py instead warns (not fails) on a value it hasn't seen before, so typos surface without blocking publication."
+        },
+        "croppingSystems": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Open vocabulary (crop or system names). Same warn-not-fail treatment as locations."
+        },
+        "people": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Auto-extracted people and organization names. Unreviewed draft data, expect noise (partial names, org-name fragments). Treat as a bonus search field, not an authoritative directory."
+        },
+        "sourceNewsletter": {
+          "type": ["string", "null"],
+          "description": "Which newsletter issue this item was published in, e.g. \"OFE-C Info No. 9\"."
+        },
+        "newsletterNo": {
+          "type": ["integer", "null"],
+          "description": "Numeric form of sourceNewsletter, used for sorting."
+        },
+        "createdAt": {
+          "type": ["string", "null"],
+          "description": "When this record was first added to the database. For the initial 2026-09 import this equals publishDate; going forward it is set once and never changed."
+        },
+        "updatedAt": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "When this record's data was last touched (a tag fix, a link recovery, etc.), not when the JSON file was regenerated."
+        },
+        "doi": { "type": ["string", "null"] },
+        "publication": {
+          "type": ["string", "null"],
+          "description": "Full citation, populated only for items backed by a journal article."
+        },
+        "citations": { "type": ["integer", "null"], "minimum": 0 },
+        "expired": {
+          "type": "boolean",
+          "description": "True for Job posting / Survey items whose publishDate is more than 90 days old (or that have no publishDate at all). The app hides these from the default view behind a \"Show past listings\" toggle; it does not remove them from the data."
+        }
+      }
+    }
+  }
+}

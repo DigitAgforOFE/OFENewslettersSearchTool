@@ -1,0 +1,15 @@
+[
+ {
+  "timestamp": "2026-09-03T20:00:00Z",
+  "itemCount": 275,
+  "missingUrl": 33,
+  "expiredCount": 10,
+  "snapshotFile": "database-2026-09.json",
+  "changeReport": {
+   "added": [],
+   "removed": [],
+   "updated": [],
+   "note": "initial publish, built from the completed Notion database via Claude's live connection, not the standalone script"
+  }
+ }
+]

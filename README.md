@@ -1,0 +1,337 @@
+# OFE Newsletters Search Tool — publishing runbook
+
+This is the standalone web app and dataset behind the OFE Newsletters
+Search Tool: a searchable, taggable library of resources drawn from
+On-Farm Experimentation (OFE) newsletters. Right now the sole source is
+the newsletter published by the International Society of Precision
+Agriculture's OFE Community (ISPA OFE-C); other sources (for example the
+GOFEN website, or others) may be added later without changing this
+architecture. It's built to the architecture in the build brief: a
+static, client-side search app fed by a JSON file, hosted on GitHub
+Pages, embeddable into any site that can host an iframe or embed block
+(currently planned: Louis's Google Site).
+
+Files move between here and GitHub through VS Code (clone once, then
+edit → commit → sync), not through GitHub's browser upload page, see
+"Get the files onto GitHub, using VS Code" below.
+
+```
+Notion (source of truth, 275 curated items)
+        │  monthly export (Claude does this for you)
+        ▼
+data/database.json  ──┐
+app/index.html         │
+app/search.js          ├──  pushed to GitHub  ──  GitHub Pages  ──  embedded wherever it's needed
+app/search.css         │
+schema, scripts, docs ─┘
+```
+
+## Folder layout
+
+```
+OFENewslettersSearchTool/
+├── data/
+│   ├── database.json          the live dataset the app reads
+│   └── database-2026-09.json  a dated snapshot, kept permanently
+├── schema/
+│   └── database.schema.json   formal schema + controlled vocabularies
+├── app/
+│   ├── index.html             page structure
+│   ├── search.js              fetch, search, filters, rendering
+│   └── search.css             styling
+├── scripts/
+│   ├── export_notion_to_json.py   standalone Notion -> JSON export (reference/fallback)
+│   └── validate_data.py           validates database.json before anything gets published
+├── processing-log.json        one line per export: counts + what changed
+└── README.md                  this file
+```
+
+This matches the layout in the build brief. `app/index.html` works
+standalone, opening it directly (via its GitHub Pages URL) shows the full
+library; Google Sites just embeds that same URL.
+
+## Why this is a separate app instead of a Squarespace/Google-Sites-native page
+
+Neither Squarespace's Basic plan nor Google Sites can run a real search
+application natively, they're page builders, not app hosts. Splitting the
+app onto its own static host (GitHub Pages) and embedding it is exactly
+the brief's design principle: *"a small static web application with a
+JSON data layer, embedded in Google Sites"* rather than a search engine
+built inside the site editor. That also means this same app can later be
+dropped into a GOFEN page, another Google Site, gofen.org, or anywhere
+else, without rebuilding anything, since the tool itself isn't tied to
+any one destination site or content source.
+
+## One-time setup
+
+### 1. Create a GitHub account (skip if you already have one)
+
+Free, at [github.com/signup](https://github.com/signup).
+
+### 2. Create a new repository
+
+- Click the **+** in the top right → **New repository**.
+- Name it `OFENewslettersSearchTool` (or anything you like).
+- Set it to **Public** (required for free GitHub Pages).
+- Leave it otherwise empty, don't add a README/gitignore, we already have one.
+- Click **Create repository**.
+
+### 3. Get the files onto GitHub, using VS Code
+
+This project uses VS Code (instead of GitHub's browser upload page) to
+move files back and forth. It's a one-time setup, after that, publishing
+a change is a few clicks in a sidebar, and you get to see exactly what
+changed before it goes live, which drag-and-drop upload never showed you.
+
+**Install VS Code and Git**
+
+- Download VS Code free at [code.visualstudio.com](https://code.visualstudio.com)
+  and install it like any other Mac app.
+- You also need Git. If it isn't already on your Mac, the first time VS
+  Code needs it (the clone step below) it will offer to install it for
+  you, just click through that, no Terminal typing required.
+
+**Clone the repo**
+
+- Open VS Code.
+- Press **Cmd+Shift+P** to open the Command Palette, type `Git: Clone`,
+  press Enter.
+- Paste the repo URL: `https://github.com/DigitAgforOFE/OFENewslettersSearchTool.git`
+- When asked where to save it, pick the `NewslettersSearchTool` folder
+  (see the note just below first, since a plain `OFENewslettersSearchTool`
+  folder already lives there).
+- Click **Open** when VS Code asks if you want to open the cloned repo.
+- The first time, VS Code opens a browser window asking you to sign in to
+  GitHub and authorize VS Code, sign in there, no token or password to
+  type anywhere in VS Code itself.
+
+**Bring the existing files into the clone**
+
+The `OFENewslettersSearchTool` folder in `NewslettersSearchTool` already
+has every project file, it just isn't tracked by Git yet. Simplest way to
+combine the two:
+
+1. In Finder, rename the existing `OFENewslettersSearchTool` folder to
+   `OFENewslettersSearchTool-files` (right-click → Rename).
+2. Do the clone step above, this creates a fresh, empty
+   `OFENewslettersSearchTool` folder that's linked to GitHub.
+3. Copy everything out of `OFENewslettersSearchTool-files` into the new
+   `OFENewslettersSearchTool` folder.
+4. In VS Code, **File → Open Folder** → select the new
+   `OFENewslettersSearchTool`. Open the Source Control panel (the
+   branching-line icon in the left sidebar, or **Cmd+Shift+G**), every
+   file appears under "Changes."
+5. Click the **+** next to "Changes" to stage everything, type a commit
+   message like `Initial publish` in the box at the top, click the
+   checkmark to commit.
+6. Click **Sync Changes** (or **Publish Branch**, whichever shows) to
+   push everything to GitHub.
+7. Once the files show up on github.com and the app still works, delete
+   the `OFENewslettersSearchTool-files` backup folder.
+
+**A heads-up about OneDrive:** this project folder lives inside your
+OneDrive sync. That's fine for the project files themselves, but OneDrive
+and Git both watching the same folder can occasionally make OneDrive flag
+Git's internal `.git` files as "conflicts." That never affects your
+actual project files, any `.git`-conflict copies OneDrive creates are
+safe to ignore or delete. If it gets annoying, the fix is moving this
+folder to a plain, non-synced location like `~/Documents/GitHub/`,
+just say so and Claude can help, though Claude would then need that new
+folder connected to keep writing the monthly exports directly into it.
+
+### 4. Turn on GitHub Pages
+
+- In the repo, go to **Settings → Pages**.
+- Source: **Deploy from a branch**. Branch: **main**, folder: **/ (root)**. Save.
+- GitHub gives you a URL like `https://<your-username>.github.io/OFENewslettersSearchTool/`.
+  Takes a minute or two to go live the first time.
+
+### 5. Check the app works on its own
+
+Open `https://<your-username>.github.io/OFENewslettersSearchTool/app/` (note
+the `/app/` at the end, that's where `index.html` lives). You should see
+the full library: search, filters, cards, all 275 resources. Try a search
+and a filter before moving to the embed step, this is the brief's "prove
+it works standalone before embedding" checkpoint.
+
+### 6. Embed it in the Google Site
+
+In the Google Site editor:
+
+1. Click **Insert**.
+2. Choose **Embed**.
+3. Paste the app's URL: `https://<your-username>.github.io/OFENewslettersSearchTool/app/`
+4. Click **Insert**, then **Publish** to save the change.
+
+Google's own help notes that a small number of sites block being embedded
+this way; GitHub Pages doesn't, so this should just work. If the embed
+shows a blank box instead of the library, that's the thing to check first,
+try the standalone URL from step 5 directly in a browser tab to confirm
+the app itself is fine, then re-check the embed.
+
+### 7. Resize if needed
+
+Google Sites gives embedded content a fixed height by default; if the
+library gets cut off, drag the embed's resize handle in the site editor
+taller, or set a generous fixed height (900px or more comfortably fits the
+filters + several rows of results on most screens).
+
+## Monthly publish checklist
+
+1. Process the new newsletter in a Claude session as usual (extract items,
+   tag them, review anything flagged).
+2. Confirm the new rows are in the Notion database and look right.
+3. Say to Claude: **"run the monthly OFE Newsletters Search Tool
+   export."** Claude queries Notion directly, regenerates `data/database.json`
+   (writing straight into your cloned `OFENewslettersSearchTool` folder), runs
+   `validate_data.py` against it, and only if that passes writes the new
+   dated snapshot and updates `processing-log.json`. You get a short
+   change report back: which items were added, removed, or edited since
+   last month.
+4. In VS Code, open the Source Control panel (**Cmd+Shift+G**). You'll
+   see `data/database.json`, the new `data/database-YYYY-MM.json`
+   snapshot, and `processing-log.json` listed under "Changes." Click any
+   file name to see a colored diff of exactly what changed before you
+   commit anything. Stage the three files (the **+** next to each, or
+   next to "Changes" to stage all), type a commit message like
+   `Monthly update — September 2026`, commit (✓), then click **Sync
+   Changes** to push to GitHub.
+5. Reload the GitHub Pages app URL and spot-check: new items show up,
+   search and filters still work.
+
+Nothing on the Google Site itself needs editing for a normal monthly
+update, only `data/database.json` changes, which is the whole point of
+keeping the app and the data separate.
+
+## If the app itself ever needs a change
+
+Editing `search.js`, `search.css`, or `index.html` (new filter, a design
+tweak, a bug fix) is separate from the monthly data update, and rarer.
+Same process: edit the file in VS Code, save it, optionally preview it
+locally first (see below), then use the Source Control panel to stage,
+commit, and **Sync Changes**, exactly like a monthly data update. The
+Google Site embed doesn't need to change at all, it just points at the
+URL, whatever's currently published there is what visitors see.
+
+## Previewing the app locally before pushing
+
+Double-clicking `app/index.html` and opening it straight from Finder
+won't work, the app fetches `data/database.json` with JavaScript, and
+browsers block that kind of request from a plain `file://` page. You need
+a local server first:
+
+**Easiest: VS Code's Live Server extension**
+
+1. In VS Code, click the Extensions icon in the left sidebar (four
+   squares), search for **Live Server** (by Ritwick Dey), click Install.
+2. Right-click `app/index.html` in the file list and choose **Open with
+   Live Server**.
+3. Your browser opens the app running locally, at something like
+   `http://127.0.0.1:5500/app/`. Edits you save in VS Code reload the
+   page automatically.
+
+**Alternative: a one-line local server**, if you'd rather not install an
+extension. Open VS Code's built-in terminal (**Terminal → New
+Terminal**), from the `OFENewslettersSearchTool` folder run:
+
+```
+python3 -m http.server 8000
+```
+
+then open `http://localhost:8000/app/` in a browser. Press Control+C in
+the terminal to stop the server when you're done.
+
+## Design decisions worth knowing
+
+- **Public fields only.** `Curator notes` and `Duplicate status` stay
+  internal to Notion and are never exported.
+- **Dead links are resolved before publishing.** Each item's link is the
+  original if it's live, or the working replacement if it isn't (Wayback
+  Machine copies are labeled "Archived copy"). A handful of items with no
+  working substitute show "No link available" rather than a broken link.
+- **Job postings and surveys hide automatically once stale** (publish
+  date + 90 days, there's rarely an explicit deadline in the newsletter
+  text to key off more precisely). They're not deleted, a "Show past
+  job postings & surveys" toggle in the filters brings them back.
+- **Topic/Location/Cropping-system filters use OR logic** within each
+  facet and AND logic between facets, per the brief.
+- **`people` is unreviewed, auto-extracted data.** It's a real field in
+  the JSON and it is searched, but expect noise (partial names, org-name
+  fragments picked up by a keyword pass, not a curated directory). Worth a
+  cleanup pass in Notion at some point; not blocking for launch.
+- **Why there's no separate merge/dedup engine in the export script:**
+  the brief's NEW/UPDATE/DUPLICATE/UNCERTAIN classification already
+  happens each month when items get added to Notion, that's what "extract
+  → tag → check for duplicates → push to Notion" already is. The export
+  step just snapshots Notion's current, already-merged state, and
+  `validate_data.py` plus the change report (added/removed/updated ids)
+  give you the audit trail the brief asks for, without duplicating logic
+  that Notion already handles.
+
+## CORS and caching, and why they're a non-issue here
+
+The brief flags CORS as something to test explicitly (section 19). In
+this layout it's moot: `app/index.html` fetches `../data/database.json`
+from the *same* GitHub Pages origin, that's a same-origin request, not a
+cross-origin one, so there's no CORS configuration to get right. (Google
+Sites embedding the app via an iframe doesn't create a CORS issue either,
+the fetch happens inside the iframe's own origin, not the parent page's.)
+This only becomes a real concern if `database.json` is ever moved to a
+different host than the app itself; if that ever happens, the fix is
+adding CORS headers on whichever host serves the JSON, and updating
+`DATA_URL` near the top of `search.js`.
+
+Caching: the app fetches `database.json` once per page load with
+`cache: "no-store"`, so a visitor always gets the current file, no manual
+cache-busting needed after a monthly update.
+
+## Validation, and what "do not publish" means in practice
+
+`scripts/validate_data.py` checks: valid JSON, schema conformance,
+required fields present, unique IDs, sane dates, http(s) URLs, controlled
+vocabulary for Content Type and Topic (Location and Cropping system are
+intentionally open vocabularies, it warns on likely near-duplicates like
+"US" vs "USA" instead of failing), no internal-only fields leaking into
+the public export, and that the declared `count` matches the actual item
+count. It also diffs against the previous snapshot and reports what
+changed.
+
+When Claude runs the monthly export, this validation runs automatically;
+if it fails, `data/database.json` is left untouched and the previous,
+already-published version stays live, nothing broken ever reaches GitHub
+Pages. You can also run it by hand any time:
+
+```
+pip install jsonschema
+python3 scripts/validate_data.py
+```
+
+## Troubleshooting
+
+- **Google Site shows a blank box where the library should be:** open the
+  GitHub Pages `/app/` URL directly in a new tab first, if that works
+  fine, the issue is the embed step (re-check the URL you pasted); if it
+  doesn't, the issue is upstream (see the next two points).
+- **App loads but shows no resources / an error message:** almost always
+  means `data/database.json` didn't upload, or `app/index.html` and
+  `data/` aren't siblings anymore (don't move `app/index.html` without
+  also updating the relative path in `search.js`).
+- **New month's items aren't showing up:** confirm step 4 of the monthly
+  checklist actually completed and GitHub Pages finished rebuilding (can
+  take a minute after a commit).
+- **A specific link goes nowhere:** check that item in Notion, the
+  `Replacement URL` field may need a manual fix; the next export picks it
+  up automatically.
+- **`validate_data.py` fails:** read its error list, it names the exact
+  item and field. Fix it in Notion and re-run the export.
+- **Source Control panel shows no changes even though a file was edited
+  or Claude regenerated the data:** make sure VS Code has the cloned
+  `OFENewslettersSearchTool` folder open (**File → Open Folder**), not a
+  different copy or its parent folder.
+- **Sync Changes / Publish Branch fails or asks you to sign in again:**
+  normal after the first setup or if your GitHub session expired, just
+  sign back in when prompted.
+- **OneDrive shows a "conflict" file inside the project folder:**
+  almost always about Git's internal `.git` files, not your actual
+  project files, safe to ignore or delete. See the OneDrive note in the
+  setup section above if it keeps happening.
