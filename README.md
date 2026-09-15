@@ -40,8 +40,13 @@ OFENewslettersSearchTool/
 │   ├── search.js              fetch, search, filters, rendering
 │   └── search.css             styling
 ├── scripts/
-│   ├── export_notion_to_json.py   standalone Notion -> JSON export (reference/fallback)
-│   └── validate_data.py           validates database.json before anything gets published
+│   ├── export_notion_to_json.py     standalone Notion -> JSON export (reference/fallback)
+│   ├── validate_data.py             validates database.json before anything gets published
+│   ├── enrich_search_keywords.py    generates pageKeywords (see "Search enrichment" below)
+│   ├── check_page_keywords.py       consistency checks for pageKeywords, run before publishing
+│   ├── enrichment_report.json       current pageKeywords coverage + what's left unenriched and why
+│   ├── enrichment_changelog.json    per-item diff from the last enrichment pass
+│   └── manual_keyword_review.md     items the script couldn't reach on its own, triaged
 ├── processing-log.json        one line per export: counts + what changed
 └── README.md                  this file
 ```
@@ -188,20 +193,77 @@ filters + several rows of results on most screens).
    dated snapshot and updates `processing-log.json`. You get a short
    change report back: which items were added, removed, or edited since
    last month.
-4. In VS Code, open the Source Control panel (**Cmd+Shift+G**). You'll
+4. Run the search enrichment on the newsletter's new items so they're
+   searchable by page content too, not just their own summary (see
+   "Search enrichment" below for what this does and why):
+   ```
+   python3 scripts/enrich_search_keywords.py
+   python3 scripts/check_page_keywords.py
+   ```
+   New items are exactly what this picks up, since it only processes
+   items that don't already have `pageKeywords`, everything from prior
+   months is untouched. Check `scripts/manual_keyword_review.md` for
+   anything it couldn't reach on its own.
+5. In VS Code, open the Source Control panel (**Cmd+Shift+G**). You'll
    see `data/database.json`, the new `data/database-YYYY-MM.json`
-   snapshot, and `processing-log.json` listed under "Changes." Click any
-   file name to see a colored diff of exactly what changed before you
-   commit anything. Stage the three files (the **+** next to each, or
-   next to "Changes" to stage all), type a commit message like
-   `Monthly update — September 2026`, commit (✓), then click **Sync
-   Changes** to push to GitHub.
-5. Reload the GitHub Pages app URL and spot-check: new items show up,
+   snapshot, `processing-log.json`, and the `scripts/enrichment_*` files
+   listed under "Changes." Click any file name to see a colored diff of
+   exactly what changed before you commit anything. Stage the files (the
+   **+** next to each, or next to "Changes" to stage all), type a commit
+   message like `Monthly update — September 2026`, commit (✓), then
+   click **Sync Changes** to push to GitHub.
+6. Reload the GitHub Pages app URL and spot-check: new items show up,
    search and filters still work.
 
 Nothing on the Google Site itself needs editing for a normal monthly
 update, only `data/database.json` changes, which is the whole point of
 keeping the app and the data separate.
+
+## Search enrichment (`pageKeywords`)
+
+Each item's own text (title, summary, tags) is what search matches by
+default, but the linked page it points to often contains useful terms
+the newsletter blurb never mentions, an author's name, a specific
+technique, a place. `pageKeywords` closes that gap: it's a per-item list
+of terms scraped or looked up from the linked page, filtered to exclude
+anything already covered by the item's own title/summary/tags, and
+included in `search.js`'s search match. It's search-only, it never
+appears on the card UI.
+
+**Generating it** — `scripts/enrich_search_keywords.py` visits each
+item's `url` and extracts terms from the page text. For sites that block
+scraping (paywalled publishers, Cloudflare) it falls back to free
+scholarly metadata (OpenAlex/Crossref, keyed by the item's `doi`) or, for
+YouTube links, the oEmbed API, both of which sidestep the block entirely
+rather than trying to defeat it. Re-running it only processes items that
+don't already have `pageKeywords`, so it's safe to run again each month:
+
+```
+pip install requests beautifulsoup4 pypdf
+python3 scripts/enrich_search_keywords.py
+```
+
+Add `--force` to re-fetch specific items (`--only OFE-010,OFE-057`) if a
+page's content has changed or a link got fixed. See the top of the
+script for the full option list.
+
+**What it can't reach on its own** ends up in
+`scripts/manual_keyword_review.md`, split into items not worth chasing
+(dead links, video/file-only pages, login walls, nothing to gain even for
+a human) and items with real content behind a block worth a manual
+visit, at which point the workflow is: open the link yourself, paste
+whatever loads back into a Claude session, and it extracts and files the
+keywords the same way the script would have.
+
+**Before publishing any pageKeywords change**, run the consistency
+checker, it catches things schema validation won't (duplicate keywords,
+a keyword that just duplicates the item's own summary text, a
+`pageKeywordsSource` value that doesn't match its counterpart fields,
+malformed DOIs, leftover tracking/wrapper URLs):
+
+```
+python3 scripts/check_page_keywords.py
+```
 
 ## If the app itself ever needs a change
 
@@ -259,6 +321,14 @@ the terminal to stop the server when you're done.
   the JSON and it is searched, but expect noise (partial names, org-name
   fragments picked up by a keyword pass, not a curated directory). Worth a
   cleanup pass in Notion at some point; not blocking for launch.
+- **`pageKeywords` is search-only.** It never renders on a card, it only
+  widens what a search term can match. It's absent (not an empty array)
+  on items the enrichment script couldn't get anything useful from, see
+  `scripts/manual_keyword_review.md` for why on any specific item.
+- **Search folds accents.** "Gésan-Guiziou" matches a search for
+  "gesan-guiziou" too, most people won't type the accent on purpose, and
+  several `pageKeywords` entries carry one (author/place names scraped
+  verbatim from a source page).
 - **Why there's no separate merge/dedup engine in the export script:**
   the brief's NEW/UPDATE/DUPLICATE/UNCERTAIN classification already
   happens each month when items get added to Notion, that's what "extract
