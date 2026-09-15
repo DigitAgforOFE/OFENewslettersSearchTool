@@ -1,0 +1,11 @@
+{
+  "model": "minishlab/potion-base-4M",
+  "dim": 128,
+  "vocabSize": 29528,
+  "unkToken": "[UNK]",
+  "unkId": 1,
+  "continuingSubwordPrefix": "##",
+  "maxInputCharsPerWord": 100,
+  "doLowerCase": true,
+  "stripAccents": true
+}

@@ -17,6 +17,7 @@
   var state = {
     q: "",
     qTerms: [],
+    qWords: [],
     filters: { contentType: new Set(), topics: new Set(), locations: new Set(), croppingSystems: new Set() },
     dateFrom: "",
     dateTo: "",
@@ -74,6 +75,7 @@
       document.getElementById("q").value = "";
       state.q = "";
       state.qTerms = [];
+      state.qWords = [];
       renderFacets();
       render();
     });
@@ -216,7 +218,10 @@
     }
   }
 
-  function matches(item){
+  // Facets, date range, and the expired-listings toggle: a hard AND applied
+  // on top of search ranking no matter which method (keyword, semantic, or
+  // both merged) produced the ranking. Unrelated to text relevance.
+  function passesFilters(item){
     if (!state.showExpired && item.expired) return false;
 
     for (var i=0;i<FACETS.length;i++){
@@ -233,21 +238,27 @@
     if (state.dateFrom && (!item.publishDate || item.publishDate < state.dateFrom)) return false;
     if (state.dateTo && (!item.publishDate || item.publishDate > state.dateTo)) return false;
 
-    if (state.qTerms && state.qTerms.length){
-      var hay = (
-        (item.title || "") + " " +
-        (item.summary || "") + " " +
-        (item.topics||[]).join(" ") + " " +
-        (item.contentType || "") + " " +
-        (item.locations||[]).join(" ") + " " +
-        (item.croppingSystems||[]).join(" ") + " " +
-        (item.people||[]).join(" ") + " " +
-        (item.pageKeywords||[]).join(" ")
-      );
-      hay = foldAccents(hay).toLowerCase();
-      for (var t=0;t<state.qTerms.length;t++){
-        if (!state.qTerms[t].test(hay)) return false;
-      }
+    return true;
+  }
+
+  // Every query word must appear as a prefix of some word, anywhere in the
+  // item. This is the strict keyword layer; semantic ranking (see
+  // semantic.js) doesn't require this and can surface items that fail it.
+  function passesKeyword(item){
+    if (!state.qTerms || !state.qTerms.length) return true;
+    var hay = (
+      (item.title || "") + " " +
+      (item.summary || "") + " " +
+      (item.topics||[]).join(" ") + " " +
+      (item.contentType || "") + " " +
+      (item.locations||[]).join(" ") + " " +
+      (item.croppingSystems||[]).join(" ") + " " +
+      (item.people||[]).join(" ") + " " +
+      (item.pageKeywords||[]).join(" ")
+    );
+    hay = foldAccents(hay).toLowerCase();
+    for (var t=0;t<state.qTerms.length;t++){
+      if (!state.qTerms[t].test(hay)) return false;
     }
     return true;
   }
@@ -263,13 +274,102 @@
     return String(s).normalize("NFD").replace(/[̀-ͯ]/g, "");
   }
 
-  // Whole-word terms: "corn" must not match "cornell", and vice versa.
-  // Multi-word queries are AND'd — every word must appear, each as its own
-  // whole word, anywhere in the item (not necessarily as a contiguous phrase).
+  // Only these can follow a query term for it to still count as a match —
+  // common inflections, not an arbitrary tail. This is what lets "trial"
+  // match "trials" and "tool" match "tools" without also letting "corn"
+  // match "cornell" (an unrelated word that simply happens to start with
+  // the same four letters — plain prefix matching got this wrong).
+  var SUFFIXES = ["'s","es","ers","er","ing","ed","s","d"];
+  var SUFFIX_PATTERN = "(?:" + SUFFIXES.join("|") + ")?";
+
+  // Multi-word queries are AND'd — every word must match (exactly, or with
+  // one of the suffixes above) some word anywhere in the item, not
+  // necessarily as a contiguous phrase.
   function buildQueryTerms(q){
     q = foldAccents(q);
     return q.split(/\s+/).filter(Boolean).map(function(term){
-      return new RegExp("\\b" + escapeRegExp(term) + "\\b");
+      return new RegExp("\\b" + escapeRegExp(term) + SUFFIX_PATTERN + "\\b");
+    });
+  }
+
+  // Same suffix rule as buildQueryTerms, applied to a single already-folded
+  // word for highlighting (see highlightText below).
+  function wordMatchesTerm(word, term){
+    if (word.length < term.length || word.indexOf(term) !== 0) return false;
+    var suffix = word.slice(term.length);
+    return suffix === "" || SUFFIXES.indexOf(suffix) !== -1;
+  }
+
+  // Relevance score for a query-active list: title hits outrank a hit in
+  // contentType/topics, which outranks a hit anywhere else (summary, people,
+  // locations, croppingSystems, pageKeywords). Used to sort results instead
+  // of leaving them in newsletter order once someone has typed a query.
+  function scoreItem(item, qTerms){
+    if (!qTerms || !qTerms.length) return 0;
+    var titleHay = foldAccents(item.title || "").toLowerCase();
+    var midHay = foldAccents((item.contentType || "") + " " + (item.topics||[]).join(" ")).toLowerCase();
+    var lowHay = foldAccents(
+      (item.summary || "") + " " +
+      (item.people||[]).join(" ") + " " +
+      (item.locations||[]).join(" ") + " " +
+      (item.croppingSystems||[]).join(" ") + " " +
+      (item.pageKeywords||[]).join(" ")
+    ).toLowerCase();
+
+    var score = 0;
+    qTerms.forEach(function(re){
+      if (re.test(titleHay)) score += 3;
+      else if (re.test(midHay)) score += 2;
+      else if (re.test(lowHay)) score += 1;
+    });
+    return score;
+  }
+
+  var WORD_RE = /[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*/g;
+
+  // Wraps words in `text` that start with any of the active query terms in
+  // <mark>, so a card visibly shows why it matched. Escapes everything else,
+  // so this is safe to drop straight into innerHTML.
+  function highlightText(text, qWords){
+    text = String(text == null ? "" : text);
+    if (!qWords || !qWords.length) return escapeHtml(text);
+
+    var out = "", last = 0, m;
+    WORD_RE.lastIndex = 0;
+    while ((m = WORD_RE.exec(text))){
+      out += escapeHtml(text.slice(last, m.index));
+      var word = m[0];
+      var folded = foldAccents(word).toLowerCase();
+      var isMatch = qWords.some(function(w){ return wordMatchesTerm(folded, w); });
+      out += isMatch ? "<mark>" + escapeHtml(word) + "</mark>" : escapeHtml(word);
+      last = m.index + word.length;
+    }
+    out += escapeHtml(text.slice(last));
+    return out;
+  }
+
+  // Same word-match rule as highlightText, but just a yes/no — used to tell
+  // whether a piece of text (a topic, a chip label) is worth prioritizing
+  // or highlighting at all, without building the marked-up HTML for it.
+  function textHasQueryMatch(text, qWords){
+    if (!qWords || !qWords.length) return false;
+    var words = String(text||"").match(WORD_RE) || [];
+    return words.some(function(w){
+      var folded = foldAccents(w).toLowerCase();
+      return qWords.some(function(q){ return wordMatchesTerm(folded, q); });
+    });
+  }
+
+  // Which of `values` (locations, croppingSystems, people, pageKeywords —
+  // fields that matched by the keyword search but never render on the
+  // card) actually contain a query term. Used to explain a match that
+  // would otherwise be invisible, without dumping the whole (often noisy,
+  // scraped) field onto the card.
+  function matchingValues(qTerms, values){
+    if (!qTerms || !qTerms.length || !values || !values.length) return [];
+    return values.filter(function(v){
+      var hay = foldAccents(v).toLowerCase();
+      return qTerms.some(function(re){ return re.test(hay); });
     });
   }
 
@@ -304,7 +404,7 @@
     return dois.map(function(d, i){ return { citation: pubs[i], url: doiUrl(d), doi: d }; });
   }
 
-  function cardHtml(item){
+  function cardHtml(item, semanticOnly){
     var papers = citedPapers(item);
     // If the raw summary is just those same citations run together with no
     // spacing (the common case for these digests), swap it for the clean list.
@@ -315,7 +415,7 @@
       citationsHtml =
         '<div class="citations-label">' + papers.length + ' papers cited</div>' +
         '<div class="citations">' + papers.map(function(p){
-          return '<div class="citation"><a href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener">' + escapeHtml(p.citation) + '</a></div>';
+          return '<div class="citation"><a href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener">' + highlightText(p.citation, state.qWords) + '</a></div>';
         }).join("") + '</div>';
     }
 
@@ -331,9 +431,51 @@
       linkBit = "";
     }
 
+    var hasQuery = !!(state.qWords && state.qWords.length);
+
+    // Matched topics float to the front of the (still capped-at-4) list, so
+    // a topic that's why this card is here doesn't get bumped off by ones
+    // that aren't, and gets highlighted the same way title/summary text does.
+    var topicsToShow = (item.topics||[]).slice();
+    if (hasQuery){
+      topicsToShow.sort(function(a,b){
+        return textHasQueryMatch(b, state.qWords) - textHasQueryMatch(a, state.qWords);
+      });
+    }
+    topicsToShow = topicsToShow.slice(0,4);
+
     var chips = "";
-    if (item.contentType) chips += '<span class="chip type">' + escapeHtml(item.contentType) + '</span>';
-    (item.topics||[]).slice(0,4).forEach(function(t){ chips += '<span class="chip">' + escapeHtml(t) + '</span>'; });
+    if (semanticOnly){
+      chips += '<span class="chip semantic" title="No matching words, but related in meaning to your search">✦ Related by meaning</span>';
+    }
+    if (item.contentType) chips += '<span class="chip type">' + highlightText(item.contentType, state.qWords) + '</span>';
+    topicsToShow.forEach(function(t){ chips += '<span class="chip">' + highlightText(t, state.qWords) + '</span>'; });
+
+    // If this matched by keyword search but nothing rendered above actually
+    // shows a highlighted word (the match lives in a field the card doesn't
+    // display — pageKeywords, people, locations, croppingSystems), say so
+    // explicitly rather than leaving the card looking unrelated. Only the
+    // values that actually matched are shown, not the whole field.
+    if (hasQuery && !semanticOnly){
+      var hasVisibleMatch =
+        textHasQueryMatch(item.title, state.qWords) ||
+        textHasQueryMatch(item.summary, state.qWords) ||
+        textHasQueryMatch(item.contentType, state.qWords) ||
+        topicsToShow.some(function(t){ return textHasQueryMatch(t, state.qWords); }) ||
+        (papers && papers.some(function(p){ return textHasQueryMatch(p.citation, state.qWords); }));
+
+      if (!hasVisibleMatch){
+        var hiddenMatches = dedupePreserveOrder(
+          matchingValues(state.qTerms, item.pageKeywords)
+            .concat(matchingValues(state.qTerms, item.people))
+            .concat(matchingValues(state.qTerms, item.locations))
+            .concat(matchingValues(state.qTerms, item.croppingSystems))
+        ).slice(0,4);
+        if (hiddenMatches.length){
+          chips += '<span class="chip hint" title="Found in this item\'s tags or the page it links to, not shown elsewhere on this card">Also matches: ' + escapeHtml(hiddenMatches.join(", ")) + '</span>';
+        }
+      }
+    }
 
     var dateStr = "";
     if (item.publishDate){
@@ -343,11 +485,11 @@
 
     var bodyHtml = summaryIsCitationDump
       ? citationsHtml
-      : ('<div class="summary">' + escapeHtml(item.summary||"") + '</div>' + citationsHtml);
+      : ('<div class="summary">' + highlightText(item.summary||"", state.qWords) + '</div>' + citationsHtml);
 
     return (
       '<article class="card">' +
-        '<h3>' + escapeHtml(item.title) + '</h3>' +
+        '<h3>' + highlightText(item.title, state.qWords) + '</h3>' +
         '<div class="meta">' + [dateStr, item.sourceNewsletter].filter(Boolean).join(" · ") + '</div>' +
         bodyHtml +
         '<div class="chips">' + chips + '</div>' +
@@ -362,25 +504,110 @@
     renderTimer = setTimeout(render, 300);
   }
 
+  var RRF_K = 60;
+
+  // A flat "top 50 by similarity" was showing up nearly the whole library
+  // for almost every query: this corpus is all on-farm-experimentation
+  // content, so even loosely-related items score moderately on cosine
+  // similarity, there's no fixed score that means "irrelevant" across every
+  // query. What's consistent is the *shape* of a good match: relevant
+  // results cluster near the top score, then similarity falls off. So we
+  // keep only results within 15% of the best match for this query (and
+  // require that best match to clear an absolute floor first, so a query
+  // with nothing genuinely related — the floor is calibrated against
+  // corpus-wide "nonsense query" testing — returns nothing rather than
+  // its closest-by-default neighbors).
+  var SEMANTIC_RELATIVE_RATIO = 0.85;
+  var SEMANTIC_MIN_SCORE = 0.30;
+  var SEMANTIC_MAX_RESULTS = 30; // safety cap, not the normal cutoff
+
+  function filterSemanticResults(scored){
+    if (!scored.length) return [];
+    var threshold = Math.max(scored[0].score * SEMANTIC_RELATIVE_RATIO, SEMANTIC_MIN_SCORE);
+    var kept = [];
+    for (var i=0; i<scored.length && kept.length<SEMANTIC_MAX_RESULTS; i++){
+      if (scored[i].score < threshold) break; // scored is sorted desc already
+      kept.push(scored[i].item);
+    }
+    return kept;
+  }
+
+  // Reciprocal Rank Fusion: an item ranking well in both lists floats to the
+  // top; an item only one method found still shows up, just lower. Ranks
+  // are 1-based positions within each already-sorted list.
+  function mergeRRF(keywordRanked, semanticRanked){
+    var scores = new Map();
+    var byId = new Map();
+    keywordRanked.forEach(function(item, i){
+      byId.set(item.id, item);
+      scores.set(item.id, (scores.get(item.id)||0) + 1/(RRF_K + i + 1));
+    });
+    semanticRanked.forEach(function(item, i){
+      byId.set(item.id, item);
+      scores.set(item.id, (scores.get(item.id)||0) + 1/(RRF_K + i + 1));
+    });
+    var merged = Array.from(byId.values());
+    merged.sort(function(a,b){ return scores.get(b.id) - scores.get(a.id); });
+    return merged;
+  }
+
   function render(){
-    var filtered = allItems.filter(matches);
+    var base = allItems.filter(passesFilters);
+    var hasQuery = state.qWords && state.qWords.length > 0;
+    var ranked;
+    var keywordMatchIds = null; // null = don't know/don't care (no query, or keyword-only mode)
+
+    if (!hasQuery){
+      ranked = base;
+    } else {
+      var keywordRanked = base.filter(passesKeyword);
+      keywordRanked.sort(function(a,b){ return scoreItem(b, state.qTerms) - scoreItem(a, state.qTerms); });
+
+      if (window.SemanticSearch && window.SemanticSearch.isReady()){
+        var semanticRanked = filterSemanticResults(window.SemanticSearch.rankItems(state.q, base));
+        ranked = keywordRanked.length ? mergeRRF(keywordRanked, semanticRanked) : semanticRanked;
+        // Only meaningful once semantic ranking is actually in play: cards
+        // with no shared words (nothing for highlightText to bold) get a
+        // "Related by meaning" badge instead, so it's clear why they're here.
+        keywordMatchIds = new Set(keywordRanked.map(function(item){ return item.id; }));
+      } else {
+        ranked = keywordRanked;
+      }
+    }
+
     var cardsEl = document.getElementById("cards");
     var emptyEl = document.getElementById("emptyState");
-    document.getElementById("countPill").textContent = filtered.length + " of " + allItems.length + " resources";
+    document.getElementById("countPill").textContent = ranked.length + " of " + allItems.length + " resources";
 
-    if (filtered.length === 0){
+    if (ranked.length === 0){
       cardsEl.innerHTML = "";
       emptyEl.hidden = false;
     } else {
       emptyEl.hidden = true;
-      cardsEl.innerHTML = filtered.map(cardHtml).join("");
+      cardsEl.innerHTML = ranked.map(function(item){
+        var semanticOnly = !!keywordMatchIds && !keywordMatchIds.has(item.id);
+        return cardHtml(item, semanticOnly);
+      }).join("");
     }
   }
 
-  document.getElementById("q").addEventListener("input", function(e){
+  var qInput = document.getElementById("q");
+
+  qInput.addEventListener("input", function(e){
     state.q = e.target.value.trim().toLowerCase();
     state.qTerms = buildQueryTerms(state.q);
+    state.qWords = foldAccents(state.q).split(/\s+/).filter(Boolean);
     scheduleRender();
   });
+
+  // Lazy-load the semantic model only once someone actually focuses the
+  // search box, so the base page (browsing/filtering, no typing) stays
+  // fast. Re-render when it finishes in case a query is already active.
+  qInput.addEventListener("focus", function(){
+    if (!window.SemanticSearch) return;
+    window.SemanticSearch.init().then(render).catch(function(err){
+      console.warn("Semantic search unavailable:", err.message);
+    });
+  }, { once: true });
 
 })();

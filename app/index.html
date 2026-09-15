@@ -4,21 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OFE Newsletters Search Tool</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="search.css">
 </head>
 <body>
 <div class="wrap">
 
   <header class="site">
-    <h1>OFE Newsletters Search Tool</h1>
-    <p>A searchable archive of resources shared in On-Farm Experimentation (OFE)
-       newsletters, papers, tools, events, and community notices, all in one place.
-       Currently sourced from the On-Farm Experimentation Community (OFE-C)
-       newsletter, published by the International Society of Precision Agriculture
-       (ISPA); more sources may be added over time.</p>
+    <div class="header-row">
+      <div class="header-text">
+        <h1>OFE Newsletters Search Tool</h1>
+        <p>A searchable archive of resources shared in On-Farm Experimentation (OFE)
+           newsletters, papers, tools, events, and community notices, all in one place.
+           Currently sourced from the On-Farm Experimentation Community (OFE-C)
+           newsletter, published by the International Society of Precision Agriculture
+           (ISPA); more sources may be added over time.</p>
+      </div>
+      <svg class="header-art" viewBox="0 0 320 150" aria-hidden="true" focusable="false">
+        <g class="rows" fill="none" stroke-linecap="round">
+          <path class="row row-1" d="M-10,26 C40,10 70,42 120,26 C170,10 200,42 250,26 C280,17 300,20 330,26" stroke-width="3"/>
+          <path class="row row-2" d="M-10,58 C40,42 70,74 120,58 C170,42 200,74 250,58 C280,49 300,52 330,58" stroke-width="3"/>
+          <path class="row row-3" d="M-10,90 C40,74 70,106 120,90 C170,74 200,106 250,90 C280,81 300,84 330,90" stroke-width="3"/>
+          <path class="row row-4" d="M-10,122 C40,106 70,138 120,122 C170,106 200,138 250,122 C280,113 300,116 330,122" stroke-width="3"/>
+        </g>
+        <g class="sprouts">
+          <g transform="translate(66,26)"><path d="M0,0 L0,-16" stroke-width="2.5" stroke-linecap="round"/><path d="M0,-12 C-10,-14 -13,-24 -9,-30 C-3,-24 -2,-16 0,-12Z"/><path d="M0,-8 C10,-11 14,-20 10,-26 C3,-21 1,-14 0,-8Z"/></g>
+          <g transform="translate(184,58) scale(0.82)"><path d="M0,0 L0,-16" stroke-width="2.5" stroke-linecap="round"/><path d="M0,-12 C-10,-14 -13,-24 -9,-30 C-3,-24 -2,-16 0,-12Z"/><path d="M0,-8 C10,-11 14,-20 10,-26 C3,-21 1,-14 0,-8Z"/></g>
+          <g transform="translate(272,90) scale(0.7)"><path d="M0,0 L0,-16" stroke-width="2.5" stroke-linecap="round"/><path d="M0,-12 C-10,-14 -13,-24 -9,-30 C-3,-24 -2,-16 0,-12Z"/><path d="M0,-8 C10,-11 14,-20 10,-26 C3,-21 1,-14 0,-8Z"/></g>
+          <g transform="translate(24,90) scale(0.62)"><path d="M0,0 L0,-16" stroke-width="2.5" stroke-linecap="round"/><path d="M0,-12 C-10,-14 -13,-24 -9,-30 C-3,-24 -2,-16 0,-12Z"/><path d="M0,-8 C10,-11 14,-20 10,-26 C3,-21 1,-14 0,-8Z"/></g>
+        </g>
+        <circle class="sun" cx="270" cy="30" r="16"/>
+      </svg>
+    </div>
     <div class="searchbar">
       <label class="sr-only" for="q">Search the library</label>
-      <input id="q" type="search" placeholder="Search titles, summaries, people… e.g. nitrogen, farmer engagement, GARDIAN">
+      <input id="q" type="search" placeholder="Search titles, summaries, people… e.g. nitrogen, farmer engagement, GARDIAN, or a whole phrase">
       <span class="count-pill" id="countPill"></span>
     </div>
     <div class="active-chips" id="activeChips"></div>
@@ -36,6 +58,7 @@
   <footer class="site" id="footer"></footer>
 </div>
 
+<script src="semantic.js"></script>
 <script src="search.js"></script>
 </body>
 </html>

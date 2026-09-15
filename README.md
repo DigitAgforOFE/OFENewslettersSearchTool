@@ -32,16 +32,20 @@ schema, scripts, docs ─┘
 OFENewslettersSearchTool/
 ├── data/
 │   ├── database.json          the live dataset the app reads
-│   └── database-2026-09.json  a dated snapshot, kept permanently
+│   ├── database-2026-09.json  a dated snapshot, kept permanently
+│   ├── embeddings.json        per-item semantic search vectors (see "Semantic search" below)
+│   └── model2vec/             browser query-encoder assets: vocab.txt, embeddings.int8.bin, scales.bin, model.json
 ├── schema/
 │   └── database.schema.json   formal schema + controlled vocabularies
 ├── app/
 │   ├── index.html             page structure
-│   ├── search.js              fetch, search, filters, rendering
+│   ├── search.js              fetch, keyword search + ranking, filters, rendering
+│   ├── semantic.js            browser-side semantic search (tokenize, embed, rank)
 │   └── search.css             styling
 ├── scripts/
 │   ├── export_notion_to_json.py     standalone Notion -> JSON export (reference/fallback)
 │   ├── validate_data.py             validates database.json before anything gets published
+│   ├── build_embeddings.py          generates data/embeddings.json and data/model2vec/ (see "Semantic search")
 │   ├── enrich_search_keywords.py    generates pageKeywords (see "Search enrichment" below)
 │   ├── check_page_keywords.py       consistency checks for pageKeywords, run before publishing
 │   ├── enrichment_report.json       current pageKeywords coverage + what's left unenriched and why
@@ -204,15 +208,25 @@ filters + several rows of results on most screens).
    items that don't already have `pageKeywords`, everything from prior
    months is untouched. Check `scripts/manual_keyword_review.md` for
    anything it couldn't reach on its own.
-5. In VS Code, open the Source Control panel (**Cmd+Shift+G**). You'll
+5. Regenerate the semantic search vectors so new items are findable by
+   meaning, not just keyword (see "Semantic search" below):
+   ```
+   pip install model2vec
+   python3 scripts/build_embeddings.py
+   ```
+   Re-run `validate_data.py` (next step) after this — it checks that
+   `data/embeddings.json` has a vector for every item in `database.json`
+   and will fail the build if this step gets skipped.
+6. In VS Code, open the Source Control panel (**Cmd+Shift+G**). You'll
    see `data/database.json`, the new `data/database-YYYY-MM.json`
-   snapshot, `processing-log.json`, and the `scripts/enrichment_*` files
-   listed under "Changes." Click any file name to see a colored diff of
-   exactly what changed before you commit anything. Stage the files (the
-   **+** next to each, or next to "Changes" to stage all), type a commit
-   message like `Monthly update — September 2026`, commit (✓), then
-   click **Sync Changes** to push to GitHub.
-6. Reload the GitHub Pages app URL and spot-check: new items show up,
+   snapshot, `data/embeddings.json`, `processing-log.json`, and the
+   `scripts/enrichment_*` files listed under "Changes." Click any file
+   name to see a colored diff of exactly what changed before you commit
+   anything. Stage the files (the **+** next to each, or next to
+   "Changes" to stage all), type a commit message like `Monthly update —
+   September 2026`, commit (✓), then click **Sync Changes** to push to
+   GitHub.
+7. Reload the GitHub Pages app URL and spot-check: new items show up,
    search and filters still work.
 
 Nothing on the Google Site itself needs editing for a normal monthly
@@ -264,6 +278,49 @@ malformed DOIs, leftover tracking/wrapper URLs):
 ```
 python3 scripts/check_page_keywords.py
 ```
+
+## Semantic search
+
+Keyword search (the `pageKeywords`-enriched match described above) is
+exact-word matching with a title/topic-priority ranking, it's very good at
+proper nouns (tool names, people, acronyms like GARDIAN) but blind to
+paraphrasing: searching "measuring outcomes beyond yield" won't find an
+item titled "Measuring More Than Yield" unless the words happen to
+overlap. Semantic search closes that gap by ranking items by *meaning*
+instead of shared words, and the two are merged (Reciprocal Rank Fusion)
+so a query that matches well on both ranks highest, a query that only one
+method finds still surfaces, and a query with zero keyword matches falls
+back to semantic-only ranking rather than an empty results page.
+
+**How it works, no backend required.** `scripts/build_embeddings.py` uses
+[model2vec](https://github.com/MinishLab/model2vec) (`potion-base-4M`,
+chosen so its quantized vocabulary table lands close to the ~4 MB budget
+in the search design doc) to precompute a 128-dim vector for every item's
+title + summary, written to `data/embeddings.json`. It also exports that
+model's own token-embedding table, quantized to ~3.8 MB, to
+`data/model2vec/`. `app/semantic.js` is a ~200-line hand-rolled
+tokenizer + lookup (there's no browser-side "model2vec.js" package worth
+pulling in — a model2vec model is just "tokenize, look up each token's
+vector, average, normalize," so this reimplements that directly against
+the exported table). It fetches those files and embeds whatever's typed
+into the search box entirely client-side: no API key, no per-query cost,
+nothing to run except a static-file fetch.
+
+**It's lazy-loaded.** Nothing under `data/model2vec/` or
+`data/embeddings.json` is fetched until someone focuses the search box,
+so anyone who's just browsing/filtering the library never pays for the
+~4 MB download. It's cached by the browser after that first fetch.
+
+**Regenerating it.** Run this any time `data/database.json` changes
+(step 5 of the monthly checklist above does this):
+```
+pip install model2vec
+python3 scripts/build_embeddings.py
+```
+`validate_data.py` checks that `data/embeddings.json` covers every id in
+`database.json` (and no stale ones), so a forgotten regeneration fails
+validation instead of silently shipping a search index that's out of sync
+with the data.
 
 ## If the app itself ever needs a change
 

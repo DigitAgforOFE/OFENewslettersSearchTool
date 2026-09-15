@@ -218,6 +218,40 @@ def check_no_secrets(data, report):
     walk(data)
 
 
+def check_embeddings(items, report, database_path):
+    """data/embeddings.json (semantic search's item vectors) must never drift
+    from database.json — every id here needs a vector there, and vice versa,
+    or the search page's keyword and semantic rankings would silently
+    disagree about which items exist. Regenerate with
+    scripts/build_embeddings.py after any database.json change."""
+    embeddings_path = os.path.join(os.path.dirname(database_path), "embeddings.json")
+    if not os.path.exists(embeddings_path):
+        report.warn("embeddings: {} not found, semantic search will be unavailable until scripts/build_embeddings.py is run".format(embeddings_path))
+        return
+
+    with open(embeddings_path, "r", encoding="utf-8") as f:
+        try:
+            emb = json.load(f)
+        except json.JSONDecodeError as e:
+            report.error("embeddings: {} is not valid JSON ({})".format(embeddings_path, e))
+            return
+
+    emb_items = emb.get("items", [])
+    emb_ids = {i.get("id") for i in emb_items if i.get("id")}
+    db_ids = {i["id"] for i in items if i.get("id")}
+
+    missing_vectors = db_ids - emb_ids
+    stale_vectors = emb_ids - db_ids
+    if missing_vectors:
+        report.error("embeddings: {} database id(s) have no embedding vector: {}".format(len(missing_vectors), sorted(missing_vectors)[:20]))
+    if stale_vectors:
+        report.error("embeddings: {} embedding vector(s) reference id(s) no longer in database.json: {}".format(len(stale_vectors), sorted(stale_vectors)[:20]))
+
+    dims = {len(i["vector"]) for i in emb_items if isinstance(i.get("vector"), list)}
+    if len(dims) > 1:
+        report.error("embeddings: item vectors have inconsistent dimensions: {}".format(sorted(dims)))
+
+
 def check_against_previous(items, report, previous_path):
     if not previous_path or not os.path.exists(previous_path):
         report.warn("history: no previous snapshot given/found, skipping the 'existing records preserved' check")
@@ -265,6 +299,7 @@ def main():
     check_urls(items, report)
     check_vocab(items, report)
     check_no_secrets(data, report)
+    check_embeddings(items, report, os.path.abspath(args.file))
 
     previous_path = args.previous or find_previous_snapshot(os.path.abspath(args.file))
     check_against_previous(items, report, previous_path)
