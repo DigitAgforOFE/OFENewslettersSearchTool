@@ -1,0 +1,34 @@
+{
+  "runAt": "2026-09-15T01:31:08Z",
+  "summary": {
+    "itemsWithUrl": 242,
+    "enriched": 223,
+    "noKeywords": 19,
+    "notWorthVisiting": 16,
+    "confirmedDeadEnd": 3
+  },
+  "notWorthVisiting": [
+    "OFE-004",
+    "OFE-048",
+    "OFE-052",
+    "OFE-087",
+    "OFE-088",
+    "OFE-093",
+    "OFE-098",
+    "OFE-107",
+    "OFE-116",
+    "OFE-175",
+    "OFE-178",
+    "OFE-209",
+    "OFE-218",
+    "OFE-226",
+    "OFE-244",
+    "OFE-280"
+  ],
+  "confirmedDeadEnd": [
+    "OFE-181",
+    "OFE-187",
+    "OFE-199"
+  ],
+  "note": "All previously-open manual-review items are now resolved: either enriched (manually, via a resolved link, or via a follow-up automated retry) or confirmed as a genuine dead end (link gone, not archived, no recoverable metadata). See scripts/enrichment_changelog.json for the full per-item diff."
+}

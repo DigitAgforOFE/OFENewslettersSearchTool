@@ -16,6 +16,7 @@
 
   var state = {
     q: "",
+    qTerms: [],
     filters: { contentType: new Set(), topics: new Set(), locations: new Set(), croppingSystems: new Set() },
     dateFrom: "",
     dateTo: "",
@@ -61,22 +62,6 @@
     var nav = document.getElementById("facets");
     nav.innerHTML = "";
 
-    // Show past listings toggle
-    var toggleWrap = document.createElement("div");
-    toggleWrap.className = "facet";
-    var btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "expired-toggle";
-    btn.textContent = "☐ Show past job postings & surveys";
-    btn.addEventListener("click", function(){
-      state.showExpired = !state.showExpired;
-      btn.textContent = (state.showExpired ? "☑" : "☐") + " Show past job postings & surveys";
-      btn.classList.toggle("active", state.showExpired);
-      render();
-    });
-    toggleWrap.appendChild(btn);
-    nav.appendChild(toggleWrap);
-
     // Clear filters
     var clearWrap = document.createElement("div");
     var clearBtn = document.createElement("button");
@@ -88,6 +73,7 @@
       state.dateFrom = ""; state.dateTo = "";
       document.getElementById("q").value = "";
       state.q = "";
+      state.qTerms = [];
       renderFacets();
       render();
     });
@@ -173,6 +159,21 @@
     dateFromEl.addEventListener("change", function(){ state.dateFrom = dateFromEl.value; render(); });
     dateToEl.addEventListener("change", function(){ state.dateTo = dateToEl.value; render(); });
 
+    // Show past listings toggle — low-priority, tucked at the bottom of the panel
+    var toggleWrap = document.createElement("div");
+    toggleWrap.className = "facet-footer";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "expired-toggle" + (state.showExpired ? " active" : "");
+    btn.textContent = (state.showExpired ? "☑" : "☐") + " Show past job postings & surveys";
+    btn.addEventListener("click", function(){
+      state.showExpired = !state.showExpired;
+      renderFacets();
+      render();
+    });
+    toggleWrap.appendChild(btn);
+    nav.appendChild(toggleWrap);
+
     renderActiveChips();
   }
 
@@ -232,7 +233,7 @@
     if (state.dateFrom && (!item.publishDate || item.publishDate < state.dateFrom)) return false;
     if (state.dateTo && (!item.publishDate || item.publishDate > state.dateTo)) return false;
 
-    if (state.q){
+    if (state.qTerms && state.qTerms.length){
       var hay = (
         (item.title || "") + " " +
         (item.summary || "") + " " +
@@ -240,11 +241,36 @@
         (item.contentType || "") + " " +
         (item.locations||[]).join(" ") + " " +
         (item.croppingSystems||[]).join(" ") + " " +
-        (item.people||[]).join(" ")
-      ).toLowerCase();
-      if (hay.indexOf(state.q) === -1) return false;
+        (item.people||[]).join(" ") + " " +
+        (item.pageKeywords||[]).join(" ")
+      );
+      hay = foldAccents(hay).toLowerCase();
+      for (var t=0;t<state.qTerms.length;t++){
+        if (!state.qTerms[t].test(hay)) return false;
+      }
     }
     return true;
+  }
+
+  function escapeRegExp(s){
+    return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  // Strips accents/diacritics (e.g. "Gésan-Guiziou" -> "Gesan-Guiziou") so a
+  // search for the unaccented form still matches names/terms that carry one —
+  // most people won't type "é" on purpose.
+  function foldAccents(s){
+    return String(s).normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
+
+  // Whole-word terms: "corn" must not match "cornell", and vice versa.
+  // Multi-word queries are AND'd — every word must appear, each as its own
+  // whole word, anywhere in the item (not necessarily as a contiguous phrase).
+  function buildQueryTerms(q){
+    q = foldAccents(q);
+    return q.split(/\s+/).filter(Boolean).map(function(term){
+      return new RegExp("\\b" + escapeRegExp(term) + "\\b");
+    });
   }
 
   function escapeHtml(s){
@@ -253,15 +279,56 @@
     });
   }
 
+  function dedupePreserveOrder(arr){
+    var seen = {}, out = [];
+    arr.forEach(function(x){
+      var k = x.toLowerCase();
+      if (!seen[k]){ seen[k] = true; out.push(x); }
+    });
+    return out;
+  }
+
+  function doiUrl(doi){
+    return "https://doi.org/" + doi.replace(/^https?:\/\/(dx\.)?doi\.org\//i, "");
+  }
+
+  // A handful of newsletter items ("Recent papers on OFE" and the like) bundle
+  // several papers' citations into one record instead of one paper each. Detect
+  // that generically from the doi/publication fields (semicolon-separated lists
+  // that match up 1:1) rather than special-casing specific item ids, so any
+  // future digest entered the same way in Notion is picked up automatically.
+  function citedPapers(item){
+    var dois = dedupePreserveOrder((item.doi || "").split(";").map(function(s){ return s.trim(); }).filter(Boolean));
+    var pubs = (item.publication || "").split(";").map(function(s){ return s.trim(); }).filter(Boolean);
+    if (dois.length < 2 || dois.length !== pubs.length) return null;
+    return dois.map(function(d, i){ return { citation: pubs[i], url: doiUrl(d), doi: d }; });
+  }
+
   function cardHtml(item){
+    var papers = citedPapers(item);
+    // If the raw summary is just those same citations run together with no
+    // spacing (the common case for these digests), swap it for the clean list.
+    var summaryIsCitationDump = !!papers && papers.some(function(p){ return (item.summary||"").indexOf(p.doi) !== -1; });
+
+    var citationsHtml = "";
+    if (papers){
+      citationsHtml =
+        '<div class="citations-label">' + papers.length + ' papers cited</div>' +
+        '<div class="citations">' + papers.map(function(p){
+          return '<div class="citation"><a href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener">' + escapeHtml(p.citation) + '</a></div>';
+        }).join("") + '</div>';
+    }
+
     var linkBit;
-    if (item.url){
+    if (item.url && !summaryIsCitationDump){
       var badge = item.urlStatus === "archived"
         ? ' <span class="badge archived">Archived copy</span>'
         : "";
       linkBit = '<div class="learn"><a href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener">View resource →</a>' + badge + '</div>';
-    } else {
+    } else if (!item.url) {
       linkBit = '<div class="no-link">No link available</div>';
+    } else {
+      linkBit = "";
     }
 
     var chips = "";
@@ -274,11 +341,15 @@
       if (!isNaN(d)) dateStr = d.toLocaleDateString(undefined,{year:"numeric",month:"short"});
     }
 
+    var bodyHtml = summaryIsCitationDump
+      ? citationsHtml
+      : ('<div class="summary">' + escapeHtml(item.summary||"") + '</div>' + citationsHtml);
+
     return (
       '<article class="card">' +
-        '<h3>' + (item.url ? ('<a href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener">' + escapeHtml(item.title) + '</a>') : escapeHtml(item.title)) + '</h3>' +
+        '<h3>' + escapeHtml(item.title) + '</h3>' +
         '<div class="meta">' + [dateStr, item.sourceNewsletter].filter(Boolean).join(" · ") + '</div>' +
-        '<div class="summary">' + escapeHtml((item.summary||"").slice(0,220)) + ((item.summary||"").length > 220 ? "…" : "") + '</div>' +
+        bodyHtml +
         '<div class="chips">' + chips + '</div>' +
         linkBit +
       '</article>'
@@ -308,6 +379,7 @@
 
   document.getElementById("q").addEventListener("input", function(e){
     state.q = e.target.value.trim().toLowerCase();
+    state.qTerms = buildQueryTerms(state.q);
     scheduleRender();
   });
 

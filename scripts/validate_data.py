@@ -159,7 +159,7 @@ def check_urls(items, report):
 
 CONTENT_TYPES = {
     "Article or paper", "Report or guide", "Project or network profile", "Event",
-    "Community notice", "Video", "Call for papers", "Data tool", "Job posting",
+    "Community notice", "Video", "Call for papers", "Tools of OFE", "Job posting",
     "Survey", "Podcast", "Award",
 }
 TOPICS = {

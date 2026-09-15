@@ -11,5 +11,65 @@
    "updated": [],
    "note": "initial publish, built from the completed Notion database via Claude's live connection, not the standalone script"
   }
+ },
+ {
+  "timestamp": "2026-09-04T00:00:00Z",
+  "itemCount": 275,
+  "missingUrl": 33,
+  "expiredCount": 10,
+  "snapshotFile": "database-2026-09.json",
+  "changeReport": {
+   "added": [],
+   "removed": [],
+   "updated": [
+    "OFE-006",
+    "OFE-012",
+    "OFE-042",
+    "OFE-050",
+    "OFE-056",
+    "OFE-060",
+    "OFE-067",
+    "OFE-072",
+    "OFE-077",
+    "OFE-099",
+    "OFE-113",
+    "OFE-149",
+    "OFE-155",
+    "OFE-177",
+    "OFE-209",
+    "OFE-234",
+    "OFE-259",
+    "OFE-272"
+   ]
+  },
+  "note": "Content Type 'Data tool' renamed to 'Tools of OFE'; umbrella broadened to 18 items (11 renamed + 7 newly classified: OFE-149, OFE-155, OFE-060, OFE-072, OFE-006, OFE-042, OFE-113)."
+ },
+ {
+  "timestamp": "2026-09-14T00:00:00Z",
+  "itemCount": 275,
+  "missingUrl": 33,
+  "expiredCount": 10,
+  "snapshotFile": "database-2026-09.json",
+  "changeReport": {
+   "added": [],
+   "removed": [],
+   "updated": [],
+   "note": "Not a Notion re-export. Added a new `pageKeywords` field: scripts/enrich_search_keywords.py visited every item's linked page and stored auto-extracted terms/phrases not already present in the item's own title/summary/tags, so search.js can match on page content the newsletter text itself doesn't contain. First pass (plain scraping only) got 145 of 242 URLs. A second pass added DOI lookups via OpenAlex/Crossref (bypasses paywalled-publisher bot-blocks entirely), YouTube's oEmbed API, a Wayback-Machine retry for a loader-shim flake, and title-matched DOIs for 2 items missing a `doi` field, bringing it to 195 of 242. Of the remaining 47, 16 are dead ends even for a human (video files, expired listings, login walls, JS-only apps with nothing textual) and 31 likely have real content behind a block a browser wouldn't hit (Cloudflare, Springer share-link bot-check, CGSpace rate-limiting) — both lists, with reasons, are in scripts/manual_keyword_review.md. Two items (OFE-236, OFE-241) turned out to have fragile/wrapped stored URLs worth fixing in Notion, also noted there."
+  },
+  "note": "Search-enrichment pass: pageKeywords now on 195 of 242 URLs (up from 145 in the first pass); the remaining 47 are triaged into 16 not worth visiting and 31 worth a manual look in scripts/manual_keyword_review.md."
+ },
+ {
+  "timestamp": "2026-09-14T00:00:00Z",
+  "itemCount": 275,
+  "missingUrl": 33,
+  "expiredCount": 10,
+  "snapshotFile": "database-2026-09.json",
+  "changeReport": {
+   "added": [],
+   "removed": [],
+   "updated": [],
+   "note": "Manual completion of the pageKeywords punch-list: worked through the 31 manual-review items one at a time (user pasted page/PDF content per item, or found a corrected URL; a few were recovered directly -- two Wayback-Machine PDFs on retry, two CGSpace pages that had been transiently rate-limited, one OSF paper via a self-contained PDF, and gofen.org's revamped conference page once the new URL was known). Ends at 223 of 242 URLs enriched; the remaining 19 are unchanged not-worth-visiting items plus 3 newly confirmed dead ends (OFE-181, OFE-199: page gone, not archived, unrecoverable via search; OFE-187: cited papers' metadata adds nothing beyond what the summary already quotes). Along the way: fixed a real accent-folding gap in app/search.js (accented keywords like \"Gesan-Guiziou\" now match their unaccented spelling too); corrected OFE-194's and OFE-236's stored URLs (dead path / Mimecast wrapper); updated OFE-147 and OFE-152 to gofen.org's new URL structure; added doi/publication to 6-7 items where the source revealed it; added locations/croppingSystems to 5 items. Added scripts/check_page_keywords.py (a consistency checker for the enrichment: catches duplicate/redundant keywords, orphaned metadata pairing, malformed DOIs, leftover tracking URLs) and scripts/enrichment_changelog.json (full per-item diff against the pre-enrichment baseline)."
+  },
+  "note": "Search-enrichment complete: pageKeywords on 223 of 242 URLs. Remaining 19 are confirmed dead ends, not gaps. See scripts/enrichment_changelog.json for the full diff and scripts/check_page_keywords.py for the consistency checks run before this was considered done."
  }
 ]
