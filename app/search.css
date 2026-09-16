@@ -84,8 +84,7 @@ header.site h1{
 }
 header.site p{margin:0;color:var(--ink-soft);font-size:.98rem;max-width:60ch;line-height:1.55}
 
-.header-actions{display:flex;justify-content:flex-end;margin-top:10px}
-@media (max-width:700px){ .header-actions{justify-content:flex-start} }
+.header-actions{display:flex;justify-content:flex-start;margin-top:10px}
 .subscribe-btn{
   display:inline-flex;align-items:center;gap:6px;
   padding:10px 18px;background:var(--green-600);color:#fff;
@@ -189,6 +188,9 @@ header.site p{margin:0;color:var(--ink-soft);font-size:.98rem;max-width:60ch;lin
   margin:0;font-family:var(--font-display);font-weight:600;
   font-size:1.2rem;line-height:1.32;letter-spacing:-.005em;color:var(--ink);
 }
+.card h3 a{color:inherit;text-decoration:none}
+.card h3 a:hover{color:var(--green-700);text-decoration:underline}
+.card h3 a:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .card .meta{font-size:.76rem;color:var(--ink-soft)}
 .card .summary{font-size:.95rem;color:var(--ink);max-width:78ch;white-space:pre-line;line-height:1.58}
 .card mark{background:var(--accent-bg);color:inherit;border-radius:3px;padding:0 2px;font-weight:600}

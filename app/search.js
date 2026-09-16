@@ -487,9 +487,15 @@
       ? citationsHtml
       : ('<div class="summary">' + highlightText(item.summary||"", state.qWords) + '</div>' + citationsHtml);
 
+    var titleText = highlightText(item.title, state.qWords);
+    var hasResourceLink = !!(item.url && !summaryIsCitationDump);
+    var titleHtml = hasResourceLink
+      ? '<a href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener">' + titleText + '</a>'
+      : titleText;
+
     return (
       '<article class="card">' +
-        '<h3>' + highlightText(item.title, state.qWords) + '</h3>' +
+        '<h3>' + titleHtml + '</h3>' +
         '<div class="meta">' + [dateStr, item.sourceNewsletter].filter(Boolean).join(" · ") + '</div>' +
         bodyHtml +
         '<div class="chips">' + chips + '</div>' +
