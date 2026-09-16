@@ -84,6 +84,15 @@ header.site h1{
 }
 header.site p{margin:0;color:var(--ink-soft);font-size:.98rem;max-width:60ch;line-height:1.55}
 
+.subscribe-btn{
+  display:inline-flex;align-items:center;gap:6px;margin-top:14px;
+  padding:10px 18px;background:var(--green-600);color:#fff;
+  font-weight:600;font-size:.92rem;border-radius:var(--radius);
+  text-decoration:none;box-shadow:var(--shadow);
+}
+.subscribe-btn:hover{background:var(--green-700)}
+.subscribe-btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
 .header-art{width:160px;height:80px;flex:none}
 .header-art .row{stroke:var(--green-600);opacity:.55}
 .header-art .row-2{stroke:var(--accent-600);opacity:.4}
