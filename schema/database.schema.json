@@ -53,6 +53,26 @@
           "enum": ["live", "alternate", "archived", "unavailable"],
           "description": "live = original link works. alternate = original died, a different working page is shown instead. archived = the link is a Wayback Machine copy of the original. unavailable = no working link exists; the UI should show the item without a link rather than a dead one."
         },
+        "links": {
+          "type": "array",
+          "description": "Every link the item's body originally contained, in reading order, each resolved the same way as `url`/`urlStatus`. `url`/`urlStatus` always mirror links[0], kept for backward compatibility. Confirmed-dead links with no usable replacement are left out entirely rather than included as unavailable. The UI uses anchorText to hyperlink the matching word(s) inline in `summary` instead of just offering a single resource link.",
+          "items": {
+            "type": "object",
+            "required": ["url", "anchorText", "urlStatus"],
+            "additionalProperties": false,
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "anchorText": {
+                "type": "string",
+                "description": "The exact word(s) this link was attached to in the original newsletter text, verbatim as it appears in `summary` (used to place the inline hyperlink)."
+              },
+              "urlStatus": {
+                "type": "string",
+                "enum": ["live", "alternate", "archived"]
+              }
+            }
+          }
+        },
         "publishDate": {
           "type": ["string", "null"],
           "format": "date",

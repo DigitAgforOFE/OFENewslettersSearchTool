@@ -373,6 +373,52 @@
     });
   }
 
+  // Wraps each link's anchorText where it verbatim-occurs in `text` with a
+  // real <a>, so an item with several links (very common) reads with the
+  // same hyperlinks the original newsletter had instead of only offering
+  // the first one via the card's single "View resource" button. Falls back
+  // to plain highlightText for any link whose anchor text isn't found (or
+  // would overlap one already placed) rather than dropping or misplacing it.
+  // Letters/digits, including the accented Latin letters that show up in
+  // names and French-language items - used to require a real word boundary
+  // around an anchor match so a short anchor like "here" can't match inside
+  // "where" or "there".
+  var WORD_CHAR_RE = /[A-Za-z0-9À-ÖØ-öø-ÿ]/;
+  function isWordChar(ch){ return !!ch && WORD_CHAR_RE.test(ch); }
+
+  function linkifyText(text, qWords, links){
+    text = String(text == null ? "" : text);
+    if (!links || !links.length) return highlightText(text, qWords);
+
+    var spans = [];
+    links.forEach(function(link){
+      if (!link.anchorText) return;
+      var searchFrom = 0, idx;
+      while ((idx = text.indexOf(link.anchorText, searchFrom)) !== -1){
+        var end = idx + link.anchorText.length;
+        var atWordBoundary = !isWordChar(text.charAt(idx - 1)) && !isWordChar(text.charAt(end));
+        var overlaps = spans.some(function(s){ return idx < s.end && end > s.start; });
+        if (atWordBoundary && !overlaps){
+          spans.push({ start: idx, end: end, url: link.url });
+          break;
+        }
+        searchFrom = idx + 1;
+      }
+    });
+    if (!spans.length) return highlightText(text, qWords);
+    spans.sort(function(a,b){ return a.start - b.start; });
+
+    var out = "", pos = 0;
+    spans.forEach(function(sp){
+      out += highlightText(text.slice(pos, sp.start), qWords);
+      out += '<a href="' + escapeHtml(sp.url) + '" target="_blank" rel="noopener">' +
+        highlightText(text.slice(sp.start, sp.end), qWords) + '</a>';
+      pos = sp.end;
+    });
+    out += highlightText(text.slice(pos), qWords);
+    return out;
+  }
+
   function escapeHtml(s){
     return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
       return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
@@ -419,8 +465,14 @@
         }).join("") + '</div>';
     }
 
+    // With more than one link, each already gets its own inline hyperlink in
+    // the summary (see linkifyText) plus the title links to the first one -
+    // a "View resource" button at that point would just repeat the first
+    // link a third time. Only show it as the single, obvious CTA when there's
+    // just the one link (or no anchor text to place it inline against at all).
+    var linkCount = (item.links && item.links.length) || (item.url ? 1 : 0);
     var linkBit;
-    if (item.url && !summaryIsCitationDump){
+    if (item.url && !summaryIsCitationDump && linkCount <= 1){
       var badge = item.urlStatus === "archived"
         ? ' <span class="badge archived">Archived copy</span>'
         : "";
@@ -485,7 +537,7 @@
 
     var bodyHtml = summaryIsCitationDump
       ? citationsHtml
-      : ('<div class="summary">' + highlightText(item.summary||"", state.qWords) + '</div>' + citationsHtml);
+      : ('<div class="summary">' + linkifyText(item.summary||"", state.qWords, item.links) + '</div>' + citationsHtml);
 
     var titleText = highlightText(item.title, state.qWords);
     var hasResourceLink = !!(item.url && !summaryIsCitationDump);

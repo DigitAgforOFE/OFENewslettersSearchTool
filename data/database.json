@@ -8,7 +8,7 @@
       "id": "OFE-001",
       "title": "Why are you getting this email?",
       "summary": "This message has been sent to you because you are a member of, or have shown interest in OFE. If you know a colleague who would like to be kept in the loop, please transfer this link to fill the OFE-C Expression of Interest Signup. You will find the past Info editions at the same place. If you want to access to the full opportunities of the OFE-C and the ISPA please join .",
-      "url": "https://www.ispag.org/Membership/Form",
+      "url": "http://www.ispag.org/Communities/On-Farm",
       "publishDate": "2020-12-14",
       "contentType": "Community notice",
       "topics": [
@@ -20,7 +20,7 @@
       "sourceNewsletter": "OFE-C Info No. 1",
       "createdAt": "2020-12-14",
       "updatedAt": "2026-09-04T00:00:00Z",
-      "urlStatus": "alternate",
+      "urlStatus": "live",
       "newsletterNo": 1,
       "doi": null,
       "publication": null,
@@ -46,7 +46,19 @@
         "ispag"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:22Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://www.ispag.org/Communities/On-Farm",
+          "anchorText": "link",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.ispag.org/Membership/Form",
+          "anchorText": "join",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-002",
@@ -75,7 +87,14 @@
         "earn"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:22Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.surveymonkey.com/r/99WXZLV",
+          "anchorText": "survey",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-003",
@@ -123,7 +142,14 @@
         "Article ADS CAS Google"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:22Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.nature.com/news/agriculture-engage-farmers-in-research-1.15108",
+          "anchorText": "Nature Comment",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-004",
@@ -151,7 +177,14 @@
       "doi": null,
       "publication": null,
       "citations": null,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.dropbox.com/s/g2jcl8ahiq6btzx/Theme4.SessionII.Farmer-basedResearch.McNee.mp4?dl=0",
+          "anchorText": "recording",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-005",
@@ -206,7 +239,14 @@
         "cairo"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:22Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://paafrica.org",
+          "anchorText": "conference website",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-006",
@@ -254,7 +294,14 @@
         "flows"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:22Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20220201163313/https://www.godan.info/codes",
+          "anchorText": "Toolkit",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-007",
@@ -301,7 +348,14 @@
         "committee science"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:22Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20210807183257/https://codata.org/initiatives/strategic-programme/decadal-programme/",
+          "anchorText": "page",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-008",
@@ -355,7 +409,19 @@
         "performance"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:22Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.yen.adas.co.uk/",
+          "anchorText": "YEN",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Wh2DpJCG4VM",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-009",
@@ -429,7 +495,14 @@
         "EvoGraphDice"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:07:19Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://rdcu.be/ccx8F",
+          "anchorText": "study",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-011",
@@ -469,7 +542,64 @@
         "semantics landscape"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T22:24:36Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.rd-alliance.org/groups/agrisemantics-wg/",
+          "anchorText": "Agrisemantics",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/igad-community-practice/",
+          "anchorText": "Agricultural Data",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/capacity-development-agriculture-data-wg",
+          "anchorText": "Capacity Development for Agriculture Data",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/geospatial-ig/",
+          "anchorText": "Geospatial",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/engaging-researchers-data-ig",
+          "anchorText": "Engaging Researchers with Data",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/data-type-registries-wg/",
+          "anchorText": "Data Type Registries",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/fair-data-maturity-model-wg",
+          "anchorText": "FAIR Data Maturity Model",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/metadata-standards-catalog-working-group/",
+          "anchorText": "Metadata Standards Catalog",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/rice-data-interoperability-wg/",
+          "anchorText": "Rice Data Interoperability",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/research-data-repository-interoperability-wg/",
+          "anchorText": "Research Data Repository Interoperability",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.rd-alliance.org/groups/wheat-data-interoperability-wg/",
+          "anchorText": "Wheat Data Interoperability",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-012",
@@ -523,7 +653,19 @@
         "registry"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.isda-africa.com/isdasoil",
+          "anchorText": "iSDAsoil",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.isda-africa.com",
+          "anchorText": "iSDA",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-013",
@@ -560,7 +702,14 @@
         "development"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://internationaldataweek.org",
+          "anchorText": "IDW 2021",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-015",
@@ -592,7 +741,14 @@
         "Digital Agriculture Virtual Workshop"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "youtube-oembed"
+      "pageKeywordsSource": "youtube-oembed",
+      "links": [
+        {
+          "url": "http://www.youtube.com/playlist?list=PLAPul_Jna_0y4pIKRVE6dDdI4FxVQ54tZ",
+          "anchorText": "Recordings",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-017",
@@ -636,7 +792,14 @@
         "traffic"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1016/j.fcr.2018.10.006"
+      "pageKeywordsSource": "doi:10.1016/j.fcr.2018.10.006",
+      "links": [
+        {
+          "url": "http://www.sciencedirect.com/science/article/pii/S0378429017318312",
+          "anchorText": "Field Crops Res. 230, 31-45",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-018",
@@ -683,7 +846,19 @@
         "sensitive"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20220201163313/https://www.godan.info/codes",
+          "anchorText": "Agricultural Data Codes of Conduct Toolkit",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "http://web.archive.org/web/20211026003531/https://www.godan.info/news/godan-data-ethics-workshop",
+          "anchorText": "here",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-020",
@@ -714,7 +889,19 @@
         "technology"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.2134/1999.precisionagproc4.c60"
+      "pageKeywordsSource": "doi:10.2134/1999.precisionagproc4.c60",
+      "links": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0065211320300481",
+          "anchorText": "Making Science More Effective for Agriculture",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/doi/pdf/10.2134/1999.precisionagproc4.c60",
+          "anchorText": "Cook, Adams, and Corner 1999",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-021",
@@ -788,7 +975,14 @@
         "analysis"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ispag.org/files/1.%20Designing%20your%20own%20OFE%20-%20Bramley.pdf",
+          "anchorText": "Designing Your Own OFE - Bramley",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-023",
@@ -842,7 +1036,19 @@
         "together"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://efao.ca",
+          "anchorText": "EFAO",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://efao.ca/research-library/?wpv_view_count=199-TCPID2182&wpv-wpcf-article-type%5B%5D=7&wpv_post_search=",
+          "anchorText": "research library",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-024",
@@ -894,7 +1100,14 @@
         "differences"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://efao.ca/researchDocs/on-farm-research-guide-rvsd-1474293564.pdf",
+          "anchorText": "guide",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-025",
@@ -946,7 +1159,14 @@
         "value"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://efao.ca/researchDocs/on-farm-pasture-research-1477508004.pdf",
+          "anchorText": "guide",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-026",
@@ -997,7 +1217,14 @@
         "disciplines study"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.sare.org/resources/systems-research-for-agriculture/",
+          "anchorText": "handbook",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-027",
@@ -1029,7 +1256,14 @@
         "find"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.surveymonkey.com/r/BFQ96YY",
+          "anchorText": "survey",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-028",
@@ -1064,7 +1298,14 @@
         "less"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:17:39Z",
-      "pageKeywordsSource": "doi:10.1007/s13194-019-0255-7"
+      "pageKeywordsSource": "doi:10.1007/s13194-019-0255-7",
+      "links": [
+        {
+          "url": "https://link.springer.com/article/10.1007/s13194-019-0255-7",
+          "anchorText": "study",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-029",
@@ -1111,7 +1352,14 @@
         "farm-"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ferdi.fr/dl/df-nxCnD1XEYKfpXcM9HeV3A4dB/ferdi-b159-adjusting-extension-models-to-the-way-farmers-learn.pdf",
+          "anchorText": "Janvry et al.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-030",
@@ -1158,7 +1406,14 @@
         "yield monitor"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T22:05:25Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20210113014112/https://www.adas.uk/Portals/0/ADAS%20Guide%20to%20Farm%20Trials.pdf",
+          "anchorText": "Guide to Farmer’s Crop Trials",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-031",
@@ -1207,7 +1462,14 @@
         "results"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.sare.org/wp-content/uploads/how-to-conduct-research-on-your-farm-or-ranch.pdf",
+          "anchorText": "technical bulletin",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-032",
@@ -1255,7 +1517,14 @@
         "cornell university"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ispag.org/Communities/On-Farm",
+          "anchorText": "website",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-033",
@@ -1325,7 +1594,14 @@
         "solutions"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.agr.gc.ca/eng/scientific-collaboration-and-research-in-agriculture/living-laboratories-initiative/?id=1551383721157",
+          "anchorText": "Living Laboratories Initiative",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-035",
@@ -1361,7 +1637,14 @@
         "basic"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:17:39Z",
-      "pageKeywordsSource": "doi:10.2134/precisionagbasics.2016.0096"
+      "pageKeywordsSource": "doi:10.2134/precisionagbasics.2016.0096",
+      "links": [
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/doi/abs/10.2134/precisionagbasics.2016.0096",
+          "anchorText": "book chapter",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-036",
@@ -1414,7 +1697,14 @@
         "year"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://efao.ca/researchDocs/efao-farmer-led-research-guide-2018-1531757405.pdf",
+          "anchorText": "guidebook",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-037",
@@ -1466,7 +1756,14 @@
         "management information system"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:14:17Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.researchgate.net/profile/Christopher_Donough/publication/320557210_Plantation_Intelligence_Applied_Oil_Palm_Operations_Unlocking_Value_by_Analysing_Commercial_Data/links/59edb669a6fdccef8b0ddfcc/Plantation-Intelligence-Applied-Oil-Palm-Operations-Unlocking-Value-by-Analysing-Commercial-Data.pdf",
+          "anchorText": "Oberthür, T. et al.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-038",
@@ -1520,7 +1817,14 @@
         "signi cant"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://arxiv.org/pdf/2004.12741v1.pdf",
+          "anchorText": "Tanaka,T.S.T.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-039",
@@ -1601,7 +1905,24 @@
         "prairie"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ltar.ars.usda.gov/sites/",
+          "anchorText": "LTAR network",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://ltar.ars.usda.gov/ltar-working-groups/datamanagement-wg/",
+          "anchorText": "data management working group",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://ltar.ars.usda.gov/data-guidance/",
+          "anchorText": "data sharing principles and guidelines",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-041",
@@ -1633,7 +1954,14 @@
         "Knowledge management"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:17:39Z",
-      "pageKeywordsSource": "doi:10.1016/j.jrurstud.2020.06.003"
+      "pageKeywordsSource": "doi:10.1016/j.jrurstud.2020.06.003",
+      "links": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0743016719313014",
+          "anchorText": "Ingram, J., Gaskell, P., Mills, J. & Dwyer, J",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-042",
@@ -1666,7 +1994,14 @@
         "join"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://farmhack.org/",
+          "anchorText": "Farm Hack",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-043",
@@ -1703,7 +2038,14 @@
         "Food security"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1007/s11119-020-09738-y"
+      "pageKeywordsSource": "doi:10.1007/s11119-020-09738-y",
+      "links": [
+        {
+          "url": "https://link.springer.com/article/10.1007/s11119-020-09738-y",
+          "anchorText": "White, E.L",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-044",
@@ -1780,7 +2122,14 @@
         "practices"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://datascience.codata.org/article/10.5334/dsj-2020-047/",
+          "anchorText": "paper",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-046",
@@ -1852,7 +2201,14 @@
       "doi": "10.1016/j.eja.2020.126183",
       "publication": "Makowski D. (2021). Editorial of the special issue “Evidence synthesis in agronomy”. European Journal of Agronomy.",
       "citations": 3,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.sciencedirect.com/journal/european-journal-of-agronomy/special-issue/10CLKSSZSF5",
+          "anchorText": "special issue",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-049",
@@ -1903,7 +2259,14 @@
         "assess"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.2134/agronj2019.02.0135"
+      "pageKeywordsSource": "doi:10.2134/agronj2019.02.0135",
+      "links": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S1161030120301349",
+          "anchorText": "Laurent et al.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-050",
@@ -1952,7 +2315,19 @@
         "guidelines"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://bigdata.cgiar.org/resources/gardian/",
+          "anchorText": "GARDIAN",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://bigdata.cgiar.org/annual-report-2019/",
+          "anchorText": "Platform for Big Data in Agriculture",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-051",
@@ -2002,7 +2377,14 @@
         "operations"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://nff.org.au/programs/australian-farm-data-code/",
+          "anchorText": "Australian Farm Data Code",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-052",
@@ -2025,7 +2407,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.iso.org/standard/53798.html",
+          "anchorText": "ISO 19115-1:2014",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-053",
@@ -2073,7 +2462,19 @@
         "university"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20221218041411/https://www.hdigitag.fr/en/ofe2021/",
+          "anchorText": "#OFE2021",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "https://ispag.org",
+          "anchorText": "ISPA home page",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-054",
@@ -2121,7 +2522,14 @@
         "production"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.cambridge.org/core/journals/journal-of-agricultural-science/article/guest-editorial-the-analysis-of-agricultural-experiments-a-brief-history-of-the-techniques-of-the-20th-century/56285C05D5A43A1F1149E71553CF3524#",
+          "anchorText": "Charles (2021)",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-055",
@@ -2199,7 +2607,24 @@
         "production"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ltar.ars.usda.gov",
+          "anchorText": "LTAR",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://agcros-usdaars.opendata.arcgis.com/pages/ltar-dm-home",
+          "anchorText": "data management portal",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://agcros-usdaars.opendata.arcgis.com/pages/ltar-dm-learn",
+          "anchorText": "tools",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-057",
@@ -2237,7 +2662,14 @@
         "farmers participation"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:16:33Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "http://www.sciencedirect.com/science/article/pii/S0168169917300479",
+          "anchorText": "Julien Minet, Yannick Curnel, Anne Gobin, Jean-Pierre Goffart, François Mélard, Bernard Tychon, Joost Wellens, Pierre Defourny.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-058",
@@ -2274,7 +2706,14 @@
         "Precision agriculture"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1007/s11119-019-09650-0"
+      "pageKeywordsSource": "doi:10.1007/s11119-019-09650-0",
+      "links": [
+        {
+          "url": "https://doi.org/10.1007/s11119-019-09650-0",
+          "anchorText": "Leroux, C., Jones, H., Pichon, L. et al",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-059",
@@ -2322,7 +2761,14 @@
         "cornell university"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ispag.org/communities/on-farm",
+          "anchorText": "https://www.ispag.org/Events/OFE",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-060",
@@ -2355,7 +2801,14 @@
         "Data mining"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1016/j.biosystemseng.2021.02.009"
+      "pageKeywordsSource": "doi:10.1016/j.biosystemseng.2021.02.009",
+      "links": [
+        {
+          "url": "https://doi.org/10.1016/j.biosystemseng.2021.02.009",
+          "anchorText": "Huidong",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-061",
@@ -2386,7 +2839,14 @@
         "Rural Planning and Development"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:17:39Z",
-      "pageKeywordsSource": "youtube-oembed"
+      "pageKeywordsSource": "youtube-oembed",
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=YkGDMxtxysA",
+          "anchorText": "recording",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-062",
@@ -2426,7 +2886,14 @@
         "results"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.20944/preprints201902.0007.v1"
+      "pageKeywordsSource": "doi:10.20944/preprints201902.0007.v1",
+      "links": [
+        {
+          "url": "https://www.preprints.org/manuscript/201902.0007/v1",
+          "anchorText": "Trevisan",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-063",
@@ -2480,7 +2947,19 @@
         "science"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://paafrica.org",
+          "anchorText": "AfCPA",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://paafrica.org/files/FINALAfCPAProceedings032321.pdf",
+          "anchorText": "available",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-065",
@@ -2520,7 +2999,14 @@
         "management"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:25:44Z",
-      "pageKeywordsSource": "doi-title-match:10.2134/agronj2019.11.0001"
+      "pageKeywordsSource": "doi-title-match:10.2134/agronj2019.11.0001",
+      "links": [
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/toc/14350645/2019/111/6",
+          "anchorText": "special issue",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-066",
@@ -2554,7 +3040,14 @@
         "Confidentiality"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1787/53ecf2ab-en"
+      "pageKeywordsSource": "doi:10.1787/53ecf2ab-en",
+      "links": [
+        {
+          "url": "https://doi.org/10.1787/53ecf2ab-en",
+          "anchorText": "https://doi.org/10.1787/53ecf2ab-en",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-067",
@@ -2603,7 +3096,19 @@
         "communication"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1002/jrsm.1440"
+      "pageKeywordsSource": "doi:10.1002/jrsm.1440",
+      "links": [
+        {
+          "url": "https://analytics.iasoybeans.com/cool-apps/ISOFAST/",
+          "anchorText": "ISOFAST",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.1002/jrsm.1440",
+          "anchorText": "https://doi.org/10.1002/jrsm.1440",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-068",
@@ -2655,7 +3160,14 @@
         "participatory approaches"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.rau.ac.uk/rural-knowledge-hub/rural-innovation-support",
+          "anchorText": "FLIN",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-071",
@@ -2689,7 +3201,14 @@
         "Data Ethics Webinar"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "youtube-oembed"
+      "pageKeywordsSource": "youtube-oembed",
+      "links": [
+        {
+          "url": "https://youtu.be/ng-b7aEYRQ0",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-072",
@@ -2742,7 +3261,14 @@
         "grants"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20210330160211/https://www.eurekalert.org/pub_releases/2021-03/c-dst032421.php",
+          "anchorText": "Data Sharing Toolkit",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-073",
@@ -2792,13 +3318,20 @@
         "conferences"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.eventbrite.com/e/responsible-agtech-symposium-tickets-144917037761",
+          "anchorText": "event",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-074",
       "title": "AgriTech4.0",
       "summary": "The gap is still huge between researchers and farmers. More needs to be done to give them opportunities to have a say in how research happens. However, co-design requires more funding, and more patience. Many companies took part in AgriTech4.0 which was an opportunity to learn about new developments in sensors and data management, and promote the importance of including farmers from an early stage of development. The goal is to help ensure technological solutions are useful, practical and easy to use in farm contexts, ultimately driving uptake of these technologies on farms. Access to the 45+ recorded presentations can be purchased here .",
-      "url": "http://web.archive.org/web/20210922151911/https://tech40.net/page-3iaJ-SKRg",
+      "url": "https://www.innovationforagriculture.org.uk/news-article/IfA%20at%20AgriTech%204.0",
       "publishDate": "2021-05-20",
       "contentType": "Event",
       "topics": [
@@ -2813,7 +3346,7 @@
       "sourceNewsletter": "OFE-C Info No. 13",
       "createdAt": "2021-05-20",
       "updatedAt": "2026-09-04T00:00:00Z",
-      "urlStatus": "archived",
+      "urlStatus": "live",
       "newsletterNo": 13,
       "doi": null,
       "publication": null,
@@ -2842,7 +3375,19 @@
         "smart"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.innovationforagriculture.org.uk/news-article/IfA%20at%20AgriTech%204.0",
+          "anchorText": "AgriTech4.0",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://web.archive.org/web/20210922151911/https://tech40.net/page-3iaJ-SKRg",
+          "anchorText": "here",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-075",
@@ -2890,7 +3435,14 @@
         "four"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1007/s11119-020-09720-8"
+      "pageKeywordsSource": "doi:10.1007/s11119-020-09720-8",
+      "links": [
+        {
+          "url": "https://doi.org/10.1007/s11119-020-09720-8",
+          "anchorText": "Trevisan, R.G.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-077",
@@ -2942,7 +3494,14 @@
         "collected experiments"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://agmip.github.io/ARDN/",
+          "anchorText": "Agricultural Research Data Network",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-078",
@@ -2979,7 +3538,14 @@
         "community"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://openag.io/",
+          "anchorText": "Open Ag Data Alliance",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-079",
@@ -3030,7 +3596,19 @@
         "goldsmith minister"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20210723154330/https://ccafs.cgiar.org/news/Transforming-Agricultural-Innovation-Climate-Nature-People",
+          "anchorText": "campaign",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "https://ccafs.cgiar.org/events/towards-evidence-based-approach-agroecology-and-climate-change-adaptation-and",
+          "anchorText": "second webinar",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-080",
@@ -3068,13 +3646,20 @@
         "agricultural"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1002/agj2.20285"
+      "pageKeywordsSource": "doi:10.1002/agj2.20285",
+      "links": [
+        {
+          "url": "https://doi.org/10.1002/agj2.20285",
+          "anchorText": "https://doi.org/10.1002/agj2.20285",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-081",
       "title": "Living Lab - Quebec",
       "summary": "The scientists, together with producers and their communities will co-create applicable solutions to improve the environmental performance of farms and watersheds and help improve the health of Lac Saint-Pierre , an enlargement of the St. Lawrence River in Quebec.",
-      "url": "http://web.archive.org/web/20210510190613/https://www.agr.gc.ca/eng/scientific-collaboration-and-research-in-agriculture/living-laboratories-initiative/living-lab-quebec/?id=1610637628547",
+      "url": "https://www.agr.gc.ca/eng/news-from-agriculture-and-agri-food-canada/scientific-achievements-in-agriculture/living-lab-quebec-an-inspiring-example-of-winning-collaboration/?id=1614951789349",
       "publishDate": "2021-06-01",
       "contentType": "Project or network profile",
       "topics": [
@@ -3092,7 +3677,7 @@
       "sourceNewsletter": "OFE-C Info No. 14",
       "createdAt": "2021-06-01",
       "updatedAt": "2026-09-04T00:00:00Z",
-      "urlStatus": "archived",
+      "urlStatus": "live",
       "newsletterNo": 14,
       "doi": null,
       "publication": null,
@@ -3121,7 +3706,19 @@
         "livestock"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.agr.gc.ca/eng/news-from-agriculture-and-agri-food-canada/scientific-achievements-in-agriculture/living-lab-quebec-an-inspiring-example-of-winning-collaboration/?id=1614951789349",
+          "anchorText": "co-create applicable solutions",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://web.archive.org/web/20210510190613/https://www.agr.gc.ca/eng/scientific-collaboration-and-research-in-agriculture/living-laboratories-initiative/living-lab-quebec/?id=1610637628547",
+          "anchorText": "improve the health of Lac Saint-Pierre",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-082",
@@ -3164,7 +3761,14 @@
         "1974"
       ],
       "pageKeywordsUpdatedAt": "2026-09-15T01:06:36Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20250323005131/https://kvk.icar.gov.in/",
+          "anchorText": "KVK",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-083",
@@ -3211,7 +3815,14 @@
         "espace"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20230201002812/https://irstea.netexplorer.pro/",
+          "anchorText": "program",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-084",
@@ -3258,7 +3869,14 @@
         "payment"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20221222074728/https://ofe2021.com/node/39",
+          "anchorText": "Register",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-086",
@@ -3311,7 +3929,14 @@
         "edit zhang"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ispag.org/files/Charles%20history%20of%20OFE%2021-04-19.pdf",
+          "anchorText": "short paper",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-087",
@@ -3337,7 +3962,19 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.springer.com/journal/13593/updates/19541038",
+          "anchorText": "Virtual Issue",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://www.ofe2021.com",
+          "anchorText": "Conference",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-088",
@@ -3364,7 +4001,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=qxTZBp49SBM",
+          "anchorText": "here",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-089",
@@ -3412,7 +4056,14 @@
         "journal"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://doi.org/10.1371/journal.pone.0150015",
+          "anchorText": "Jiménez D, Dorado H, Cock J, Prager SD, Delerce S, Grillon A, et al",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-090",
@@ -3446,7 +4097,14 @@
         "Marketing"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1016/j.jrurstud.2020.12.009"
+      "pageKeywordsSource": "doi:10.1016/j.jrurstud.2020.12.009",
+      "links": [
+        {
+          "url": "https://doi.org/10.1016/j.jrurstud.2020.12.009",
+          "anchorText": "Kenny, U. and Regan, Á.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-091",
@@ -3481,7 +4139,14 @@
         "The Future"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "youtube-oembed"
+      "pageKeywordsSource": "youtube-oembed",
+      "links": [
+        {
+          "url": "https://youtu.be/IByD0QBQauk",
+          "anchorText": "webinar",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-092",
@@ -3515,7 +4180,24 @@
         "Restructuring"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1038/s43016-021-00424-4"
+      "pageKeywordsSource": "doi:10.1038/s43016-021-00424-4",
+      "links": [
+        {
+          "url": "https://rdcu.be/cDLSP",
+          "anchorText": "SharedIt link",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://ispag.org/Communities/On-Farm",
+          "anchorText": "OFE-C",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.1038/s43016-021-00424-4",
+          "anchorText": "https://doi.org/10.1038/s43016-021-00424-4",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-093",
@@ -3538,7 +4220,19 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.springer.com/journal/13593/updates/19541038?error=cookies_not_supported&code=064ee937-3356-4422-b9bd-f83ee568edbe",
+          "anchorText": "Special Issue in Agronomy for Sustainable Development",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://ofe2021.com",
+          "anchorText": "On-Farm Experimentation Conference",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-094",
@@ -3594,7 +4288,24 @@
         "speakers"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ofe2021.com",
+          "anchorText": "OFE2021",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.phenorob.de/",
+          "anchorText": "PhenoRob",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://publish.illinois.edu/data-intensive-farm-managment/",
+          "anchorText": "DIFM",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-095",
@@ -3639,7 +4350,14 @@
         "evaluation"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:17:39Z",
-      "pageKeywordsSource": "doi:10.3390/agronomy11102042"
+      "pageKeywordsSource": "doi:10.3390/agronomy11102042",
+      "links": [
+        {
+          "url": "https://doi.org/10.3390/agronomy11102042",
+          "anchorText": "paper",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-096",
@@ -3686,7 +4404,14 @@
         "choice"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1007/s13593-021-00681-4"
+      "pageKeywordsSource": "doi:10.1007/s13593-021-00681-4",
+      "links": [
+        {
+          "url": "https://doi.org/10.1007/s13593-021-00681-4",
+          "anchorText": "review",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-098",
@@ -3715,7 +4440,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": true
+      "expired": true,
+      "links": [
+        {
+          "url": "https://cornell.app.box.com/s/mkdt0iobp23eu3p9upqj6yzsolgzf02p",
+          "anchorText": "position",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-099",
@@ -3760,7 +4492,19 @@
         "malawi"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://via.farm/",
+          "anchorText": "Virtual Irrigation Academy",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.fao.org/3/CA1726EN/ca1726en.pdf",
+          "anchorText": "WFD",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-100",
@@ -3818,7 +4562,19 @@
         "respectively"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://doi.org/10.1038/s41598-021-83917-3",
+          "anchorText": "Khakbazan, M., Moulin, A. & Huang, J.",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.1016/j.geoderma.2020.114857",
+          "anchorText": "Aaron J. Glenn, Alan P. Moulin, Amal K. Roy, Henry F. Wilson",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-101",
@@ -3868,7 +4624,19 @@
         "US Geological Survey"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.rd-alliance.org/news/rdas-18th-virtual-plenary-meeting-final-report/",
+          "anchorText": "report",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.youtube.com/@RDAResearchDataAlliance",
+          "anchorText": "videos",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-102",
@@ -3900,7 +4668,14 @@
         "Agriculture"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1007/s13593-022-00758-8"
+      "pageKeywordsSource": "doi:10.1007/s13593-022-00758-8",
+      "links": [
+        {
+          "url": "https://doi.org/10.1007/s13593-022-00758-8",
+          "anchorText": "Catalogna et al. (2022)",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-103",
@@ -3947,7 +4722,14 @@
         "framework"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://datascience.codata.org/articles/10.5334/dsj-2022-008/",
+          "anchorText": "new paper",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-104",
@@ -3991,7 +4773,14 @@
         "Wilkinson"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T22:18:42Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://osf.io/xsu4p/",
+          "anchorText": "FAIR Quality Information guidelines",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-105",
@@ -4041,7 +4830,14 @@
         "start"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.rd-alliance.org/podcast",
+          "anchorText": "Data Streams",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-106",
@@ -4091,7 +4887,14 @@
         "hello"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.rd-alliance.org/group_post/webinar-how-to-get-attention-for-research-project-outputs-part-2/",
+          "anchorText": "Social Marketing",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-107",
@@ -4170,7 +4973,19 @@
         "experiments"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://agmip.github.io/ARDN/",
+          "anchorText": "ARDN",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://agmip.github.io/ARDN/2022-06_Conference.html",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-109",
@@ -4211,7 +5026,14 @@
         "inputs"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.3390/su14010106"
+      "pageKeywordsSource": "doi:10.3390/su14010106",
+      "links": [
+        {
+          "url": "https://doi.org/10.3390/su14010106",
+          "anchorText": "https://doi.org/10.3390/su14010106",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-110",
@@ -4248,7 +5070,14 @@
         "page"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20250516051508/https://ispag.org/article_display/?id=1008&title=Post+Doc+in+Precision+Agriculture+-+UCONN",
+          "anchorText": "Post Doctorial Associate",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-112",
@@ -4279,7 +5108,14 @@
         "Agricultural science"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:25:44Z",
-      "pageKeywordsSource": "doi-title-match:10.1016/j.fcr.2022.108651"
+      "pageKeywordsSource": "doi-title-match:10.1016/j.fcr.2022.108651",
+      "links": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378429022002222",
+          "anchorText": "https://www.sciencedirect.com/science/article/abs/pii/S0378429022002222",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-113",
@@ -4322,7 +5158,34 @@
         "interviews"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:23:59Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://farmpep.net/project/farmpepnet-project",
+          "anchorText": "here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://farmpep.net/OFE",
+          "anchorText": "On-Farm Experimentation",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://farmpep.net/group/17",
+          "anchorText": "Farm centric research",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://farmpep.net/group/74",
+          "anchorText": "Farmer led innovation",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://www.farmpep.net/",
+          "anchorText": "look",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-114",
@@ -4373,7 +5236,14 @@
         "January"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://publish.illinois.edu/data-intensive-farm-managment/",
+          "anchorText": "Data-Intensive Farm Management Project",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-115",
@@ -4424,7 +5294,14 @@
         "hospital"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20260312071015/https://www.ox.ac.uk/news/features/recovery-trial-two-years",
+          "anchorText": "UK RECOVERY Trial",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-116",
@@ -4447,7 +5324,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": true
+      "expired": true,
+      "links": [
+        {
+          "url": "https://forms.gle/b7sG4yNDCwxojVn98",
+          "anchorText": "https://forms.gle/b7sG4yNDCwxojVn98",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-117",
@@ -4522,13 +5406,30 @@
         "association"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://paafrica.org",
+          "anchorText": "African Conference On Precision Agriculture",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://paafrica.org",
+          "anchorText": "not too late to register",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://paafrica.org",
+          "anchorText": "here",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-120",
       "title": "Special Issue on OFE in Agronomy for Sustainable Development",
       "summary": "Back in August 2021, guest editors Myrtille Lacoste, Isabelle Piot-Lepetit, Nicolas Tremblay and Simon Cook sent a call for papers for a virtual issue on OFE , which ended in March 2022. The virtual issue is titled “Farmer-Centric On-Farm Experimentation (OFE): digital tools for a scalable transformative pathway” Papers are starting to be published online and we want to highlight them here as they are coming out: ► Laurent et al. (2022) A yield comparison between small-plot and on-farm foliar fungicide trials in soybean and maize. ► Song et al. (2022) Factors influencing intention to apply spatial approaches to on-farm experimentation: insights from the Australian winegrape sector.",
-      "url": "https://doi.org/10.1007/s13593-022-00822-3",
+      "url": "https://www.springer.com/journal/13593/updates/19541038?",
       "publishDate": "2022-11-29",
       "contentType": "Community notice",
       "topics": [
@@ -4541,7 +5442,7 @@
       "sourceNewsletter": "OFE-C Info No. 23",
       "createdAt": "2022-11-29",
       "updatedAt": "2026-09-04T00:00:00Z",
-      "urlStatus": "alternate",
+      "urlStatus": "live",
       "newsletterNo": 23,
       "doi": null,
       "publication": null,
@@ -4566,7 +5467,24 @@
         "effects"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:17:39Z",
-      "pageKeywordsSource": "doi:10.1007/s13593-022-00822-3"
+      "pageKeywordsSource": "doi:10.1007/s13593-022-00822-3",
+      "links": [
+        {
+          "url": "https://www.springer.com/journal/13593/updates/19541038?",
+          "anchorText": "call for papers for a virtual issue on OFE",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.1007/s13593-022-00822-3",
+          "anchorText": "Laurent et al. (2022) A yield comparison between small-plot and on-farm foliar fungicide trials in soybean and maize.",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://doi.org/10.1007/s13593-022-00829-w",
+          "anchorText": "Song et al. (2022) Factors influencing intention to apply spatial approaches to on-farm experimentation: insights from the Australian winegrape sector.",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-121",
@@ -4620,7 +5538,14 @@
         "broad"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://sites.google.com/site/ofpeframework/home/broad-vision-for-ofpe",
+          "anchorText": "Read More",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-122",
@@ -4667,7 +5592,14 @@
         "cornell"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ispag.org/communities/on-farm",
+          "anchorText": "here",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-123",
@@ -4719,13 +5651,20 @@
         "system"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://journal.hep.com.cn/fase/EN/10.15302/J-FASE-2022465",
+          "anchorText": "here",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-124",
       "title": "Latest Release From the ASD Special Issue on OFE",
       "summary": "Back in August 2021, guest editors Myrtille Lacoste, Isabelle Piot-Lepetit, Nicolas Tremblay and Simon Cook sent a call for papers for a virtual issue on OFE , which ended in March 2022. The virtual issue is titled “Farmer-Centric On-Farm Experimentation (OFE): digital tools for a scalable transformative pathway” Here is the latest article to be published ► Toffolini and Jeuffroy 2022. On-farm experimentation practices and associated farmer-researcher relationships: a systematic literature review.",
-      "url": "https://doi.org/10.1007/s13593-022-00845-w",
+      "url": "https://www.springer.com/journal/13593/updates/19541038?",
       "publishDate": "2023-01-16",
       "contentType": "Community notice",
       "topics": [
@@ -4738,7 +5677,7 @@
       "sourceNewsletter": "OFE-C Info No. 24",
       "createdAt": "2023-01-16",
       "updatedAt": "2026-09-04T00:00:00Z",
-      "urlStatus": "alternate",
+      "urlStatus": "live",
       "newsletterNo": 24,
       "doi": null,
       "publication": null,
@@ -4758,7 +5697,19 @@
         "themes"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1007/s13593-022-00845-w"
+      "pageKeywordsSource": "doi:10.1007/s13593-022-00845-w",
+      "links": [
+        {
+          "url": "https://www.springer.com/journal/13593/updates/19541038?",
+          "anchorText": "call for papers for a virtual issue on OFE",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.1007/s13593-022-00845-w",
+          "anchorText": "Toffolini and Jeuffroy 2022. On-farm experimentation practices and associated farmer-researcher relationships: a systematic literature review.",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-125",
@@ -4798,7 +5749,14 @@
         "study oversight"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:27:33Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.appliedclinicaltrialsonline.com/view/regulators-speak-about-decentralized-clinical-trials",
+          "anchorText": "here",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-126",
@@ -4870,7 +5828,14 @@
         "april"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ipmworks.net/",
+          "anchorText": "follow this link",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-129",
@@ -4925,7 +5890,14 @@
         "projet font"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.itbfr.org/tous-les-articles/article/news/les-experimentateurs-du-projet-fpe-font-le-bilan-de-la-campagne-2022/",
+          "anchorText": "follow this link",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-130",
@@ -4976,7 +5948,14 @@
         "effective"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.unep.org/events/conference/adaptation-futures-2023",
+          "anchorText": "follow this link",
+          "urlStatus": "alternate"
+        }
+      ]
     },
     {
       "id": "OFE-131",
@@ -5020,7 +5999,14 @@
         "University of Otago"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:28:33Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.mdpi.com/2072-6643/14/21/4649",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-132",
@@ -5081,7 +6067,14 @@
         "version"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20231026024638/https://nextcloud.inrae.fr/s/BDcebDdS9t69TWz",
+          "anchorText": "here",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-134",
@@ -5130,7 +6123,14 @@
         "irex venture"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://developmentgateway.org/publication_landing/farmer-centric-data-governance-towards-a-new-paradigm/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-135",
@@ -5184,7 +6184,14 @@
         "feed planet"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://theconversation.com/long-standing-systems-for-sustainable-farming-could-feed-people-and-the-planet-if-industry-is-willing-to-step-back-183506",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-136",
@@ -5231,7 +6238,14 @@
         "Cambodia"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:35:06Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.france24.com/en/live-news/20220323-the-scientists-helping-farmers-kick-the-chemical-habit",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-137",
@@ -5284,7 +6298,14 @@
         "page"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.nrdc.org/sites/default/files/regenerative-agriculture-farm-policy-21st-century-report.pdf",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-138",
@@ -5335,7 +6356,19 @@
         "equity"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.unep.org/events/conference/adaptation-futures-2023",
+          "anchorText": "Adaptation Futures 2023 Conference",
+          "urlStatus": "alternate"
+        },
+        {
+          "url": "https://www.all-ready-project.eu/communication/news-events/news/default-92e383dbb4.html",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-139",
@@ -5384,7 +6417,14 @@
         "tools"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20230310102600/https://ofe2021.com/OFE_job_opportunities",
+          "anchorText": "here",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-140",
@@ -5431,7 +6471,14 @@
         "year"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.theguardian.com/world/2022/jan/04/we-need-to-respect-the-process-of-healing-a-gp-on-the-overlooked-art-of-recovery?utm_term=61d960a34135b254e6a83ca67596c639&utm_campaign=TheLongRead&utm_source=esp&utm_medium=Email&CMP=longread_email",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-141",
@@ -5509,7 +6556,14 @@
         "gdpr gdpr"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.aapresid.org.ar/sistema-chacras",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-143",
@@ -5562,7 +6616,19 @@
         "state"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://publish.illinois.edu/data-intensive-farm-managment/",
+          "anchorText": "DIFM",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5utvFe590KA&ab_channel=CLARION",
+          "anchorText": "Conducting research along with farmers",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-144",
@@ -5662,7 +6728,14 @@
         "knowledge"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1016/j.agsy.2021.103053"
+      "pageKeywordsSource": "doi:10.1016/j.agsy.2021.103053",
+      "links": [
+        {
+          "url": "https://doi.org/10.1016/j.agsy.2021.103053",
+          "anchorText": "https://doi.org/10.1016/j.agsy.2021.103053",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-146",
@@ -5720,13 +6793,45 @@
         "macquet whose"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_ofe202140-n-trubert-activity-7049291447128190976-zdFZ?utm_source=share&utm_medium=member_desktop",
+          "anchorText": "Participatory experimentation at CETA35",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_ofe202190-m-mcnee-activity-7044989382805606401-UZo_?utm_source=share&utm_medium=member_desktop",
+          "anchorText": "Using digital maps to build research questions relevant to Falkland Islands farmers",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_ofe202160-em-hawkins-activity-7046933552721993728-_-Qv?utm_source=share&utm_medium=member_desktop",
+          "anchorText": "eFields: Ohio State University’s On-Farm Research Program",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_ofe202130-l-sagoo-activity-7043927582454513664-eK01?utm_source=share&utm_medium=member_desktop",
+          "anchorText": "Increasing the speed and uptake of innovation in the field vegetable and potato sectors: defining a new approach for delivering cost effective research",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_ofe202152-h-aldis-activity-7042433301336182784-o3Ey?utm_source=share&utm_medium=member_desktop",
+          "anchorText": "Case study: Innovative Farmers, lessons from 10 years championing farmer-led on-farm research in the UK",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_ofe202149-l-thompson-activity-7041014237053243392-6cZ_?utm_source=share&utm_medium=member_desktop",
+          "anchorText": "From Data to Decisions: Facilitating Transformational Learning through the Nebraska On-Farm Research Network",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-147",
       "title": "#OFE2023",
       "summary": "Stay on top of the latest information for the 2nd Conference on Farmer-Centric On-Farm Experimentation, which will take place in a virtual format on Dec. 5-7 2023, by visiting the conference webpage: https://www.gofen.org/ofe2023/",
-      "url": "https://www.gofen.org/ofe2023-home",
+      "url": "http://web.archive.org/web/20260217122630/https://www.gofen.org/ofe2023/",
       "publishDate": "2023-05-15",
       "contentType": "Event",
       "topics": [
@@ -5738,7 +6843,7 @@
       "sourceNewsletter": "OFE-C Info No. 28",
       "createdAt": "2023-05-15",
       "updatedAt": "2026-09-15T01:11:36Z",
-      "urlStatus": "live",
+      "urlStatus": "archived",
       "newsletterNo": 28,
       "doi": null,
       "publication": null,
@@ -5764,7 +6869,14 @@
         "OECD-CRP"
       ],
       "pageKeywordsUpdatedAt": "2026-09-15T01:12:37Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20260217122630/https://www.gofen.org/ofe2023/",
+          "anchorText": "https://www.gofen.org/ofe2023/",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-148",
@@ -5818,7 +6930,24 @@
         "INRAE"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:13:10Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://rdcu.be/dbZxt",
+          "anchorText": "Read the paper here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://rdcu.be/dbZxE",
+          "anchorText": "Read the paper here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://rdcu.be/dbZCz",
+          "anchorText": "Read the paper here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-149",
@@ -5850,7 +6979,19 @@
         "fields"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:17:39Z",
-      "pageKeywordsSource": "youtube-oembed"
+      "pageKeywordsSource": "youtube-oembed",
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=jKBFE9IURi8&t=1619s",
+          "anchorText": "this video",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://support.agstudio.granular.ag/hc/en-us/articles/8802170358164-How-do-I-use-Treatment-Analysis-",
+          "anchorText": "Treatment Analysis",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-150",
@@ -5879,7 +7020,14 @@
         "Randomized controlled trial"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1016/j.jtcvs.2020.10.120"
+      "pageKeywordsSource": "doi:10.1016/j.jtcvs.2020.10.120",
+      "links": [
+        {
+          "url": "https://doi.org/10.1016/j.jtcvs.2020.10.120",
+          "anchorText": "Gaudino et al. (2020)",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-151",
@@ -5910,7 +7058,7 @@
       "id": "OFE-152",
       "title": "#OFE2023 – Abstract submission is open until July 1st",
       "summary": "Stay on top of the latest information for the 2nd Conference on Farmer-Centric On-Farm Experimentation which will take place in a virtual format on Dec. 5-7 2023 by visiting the conference webpage: https://www.gofen.org/ofe2023/ . You may submit your 150-word abstract here .",
-      "url": "https://www.gofen.org/ofe2023-home",
+      "url": "http://web.archive.org/web/20260217122630/https://www.gofen.org/ofe2023/",
       "publishDate": "2023-06-05",
       "contentType": "Call for papers",
       "topics": [
@@ -5922,7 +7070,7 @@
       "sourceNewsletter": "OFE-C Info No. 29",
       "createdAt": "2023-06-05",
       "updatedAt": "2026-09-15T01:11:36Z",
-      "urlStatus": "live",
+      "urlStatus": "archived",
       "newsletterNo": 29,
       "doi": null,
       "publication": null,
@@ -5948,13 +7096,25 @@
         "OECD-CRP"
       ],
       "pageKeywordsUpdatedAt": "2026-09-15T01:12:37Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20260217122630/https://www.gofen.org/ofe2023/",
+          "anchorText": "https://www.gofen.org/ofe2023/",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "http://web.archive.org/web/20260217114028/https://www.gofen.org/ofe2023/abstracts/",
+          "anchorText": "here",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-153",
       "title": "Nebraska On-Farm Research Network",
       "summary": "The Nebraska On-Farm Research Network is a collaborative project where producers take an active role in answering questions that impact the productivity, profitability, and long-term sustainability of their operations. Research is conducted using scientifically sound methods and results provide valuable information for farmers and agronomists throughout the state. Learn about the Nebraska On-Farm Research Network here . You can also read more in the Proceedings of the North Central Extension-Industry Soil Fertility Conference .",
-      "url": "http://web.archive.org/web/20221201002529/https://northcentralfertility.com/files/2022NCSFC%20Proceedings.pdf",
+      "url": "https://www.youtube.com/watch?v=xjlx0q5sFjU",
       "publishDate": "2023-06-05",
       "contentType": "Project or network profile",
       "topics": [
@@ -5974,7 +7134,7 @@
       "sourceNewsletter": "OFE-C Info No. 29",
       "createdAt": "2023-06-05",
       "updatedAt": "2026-09-04T00:00:00Z",
-      "urlStatus": "archived",
+      "urlStatus": "live",
       "newsletterNo": 29,
       "doi": null,
       "publication": null,
@@ -5998,7 +7158,19 @@
         "Mehlich-3 ICP Soil Phosphorus Test"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T22:07:06Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=xjlx0q5sFjU",
+          "anchorText": "here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://web.archive.org/web/20221201002529/https://northcentralfertility.com/files/2022NCSFC%20Proceedings.pdf",
+          "anchorText": "Proceedings of the North Central Extension-Industry Soil Fertility Conference",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-154",
@@ -6054,7 +7226,24 @@
         "researchers"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://doi.org/10.3389/fsufs.2023.1064251",
+          "anchorText": "https://doi.org/10.3389/fsufs.2023.1064251",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.1007/s13593-022-00822-3",
+          "anchorText": "https://doi.org/10.1007/s13593-022-00822-3",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://rdcu.be/dcUmS",
+          "anchorText": "https://doi.org/10.1007/s11119-023-10029-5",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-155",
@@ -6084,7 +7273,14 @@
         "replications"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1002/crso.20278"
+      "pageKeywordsSource": "doi:10.1002/crso.20278",
+      "links": [
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/doi/epdf/10.1002/crso.20278",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-156",
@@ -6142,7 +7338,19 @@
         "page"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20260510021054/https://www.ispag.org/OFEC/Registration",
+          "anchorText": "here",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "http://web.archive.org/web/20260217122630/https://www.gofen.org/ofe2023/",
+          "anchorText": "here",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-158",
@@ -6193,7 +7401,14 @@
         "calendar"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://esee2023.colloque.inrae.fr/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-159",
@@ -6244,7 +7459,14 @@
         "experiments pmfby"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.cropin.com/project/cropin-reduces-time-and-cost-of-crop-cutting-experiments-for-pmfby-government-of-india-with-its-agtech-stack",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-160",
@@ -6301,7 +7523,19 @@
         "learning"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:21:41Z",
-      "pageKeywordsSource": "doi:10.1525/elementa.2021.00026,10.2134/agronj2018.12.0769"
+      "pageKeywordsSource": "doi:10.1525/elementa.2021.00026,10.2134/agronj2018.12.0769",
+      "links": [
+        {
+          "url": "https://doi.org/10.2134/agronj2018.12.0769",
+          "anchorText": "https://doi.org/10.2134/agronj2018.12.0769",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.1525/elementa.2021.00026",
+          "anchorText": "https://doi.org/10.1525/elementa.2021.00026",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-161",
@@ -6349,7 +7583,14 @@
         "message"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.lancasterfarming.com/farming-news/news/digital-agronomy-can-support-on-farm-experimentation-process/article_2f925016-26f8-11ee-8e2e-e3a17dbceff9.html",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-162",
@@ -6412,7 +7653,19 @@
         "page"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20260510021054/https://www.ispag.org/OFEC/Registration",
+          "anchorText": "using this link",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "http://web.archive.org/web/20260217122630/https://www.gofen.org/ofe2023/",
+          "anchorText": "website",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-164",
@@ -6465,7 +7718,14 @@
         "gallons"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20250713035242/http://2024.ofpe.org/",
+          "anchorText": "here",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-165",
@@ -6516,7 +7776,14 @@
         "supporting"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.auc-uk.org/research-strategy",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-166",
@@ -6571,7 +7838,14 @@
         "registration workshops"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.agritechecon.co.uk/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-167",
@@ -6620,7 +7894,14 @@
         "united nations"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://doi.org/10.1038/s43016-023-00832-8",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-168",
@@ -6652,7 +7933,14 @@
         "Natural resource management"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1016/j.envsci.2008.06.005"
+      "pageKeywordsSource": "doi:10.1016/j.envsci.2008.06.005",
+      "links": [
+        {
+          "url": "https://doi.org/10.1016/j.envsci.2008.06.005",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-169",
@@ -6683,7 +7971,7 @@
       "id": "OFE-170",
       "title": "In France, OFE is taking off!",
       "summary": "Two years ago, the First OFE international conference ( #OFE2021 ) was organized in Montpellier. Over the last 2 years, many OFE activities have been set up at INRAE and in various agricultural technical institutes including ACTA, Terres Innovia, Arvalis and others. Researchers in the IDEAS network (Initiative for Design in AgriFood Systems) have produced publications and organized OFE events, notably: Toffolini, Q. and Jeuffroy, M.H., 2022. On-farm experimentation practices and associated farmer-researcher relationships: a systematic literature review . Agronomy for Sustainable Development, 42(6), p.114. (following the OFE2021 conference), Salembier, C., Aare, A.K., Bedoussac, L., Chongtham, I.R., de Buck, A., Dhamala, N.R., Dordas, C., Finckh, M.R., Hauggaard-Nielsen, H., Krysztoforski, M. and Lund, S., 2023. Exploring the inner workings of design-support experiments: Lessons from 11 multi-actor experimental networks for intercrop design. European Journal of Agronomy, 144, p.126729., to introduce the results of the European Project ReMIX (Redesigning European cropping systems based on species mixtures; Grant agreement ID: 727217) A workshop on the value of OFE on October,18, 2023 (Montpellier) is jointly organized by INRAE and the CGIAR, as part of the preparatory seminars for the #OFE2023 conference ; And above all, INRAE has hired two permanent staff members to work on OFE: Anice Cheraiet, researcher at UMR ITAP (Montpellier), specializing in data science for OFE, and Clémentine Meunier, research engineer at UMR AGIR (Toulouse), specializing in stakeholder networks in OFE. All these encouraging signs show that, in France, OFE is definitively taking off !",
-      "url": "http://web.archive.org/web/20260115211541/https://www.gofen.org/ofe2023/workshops/digitag-workshop/",
+      "url": "https://ofe2021.com/",
       "publishDate": "2023-10-19",
       "contentType": "Project or network profile",
       "topics": [
@@ -6705,7 +7993,7 @@
       "sourceNewsletter": "OFE-C Info No. 32",
       "createdAt": "2023-10-19",
       "updatedAt": "2026-09-04T00:00:00Z",
-      "urlStatus": "archived",
+      "urlStatus": "live",
       "newsletterNo": 32,
       "doi": "10.1007/s13593-022-00845-w",
       "publication": "Toffolini Q., Jeuffroy M. (2022). On-farm experimentation practices and associated farmer-researcher relationships: a systematic literature review. Agronomy for Sustainable Development.",
@@ -6734,7 +8022,39 @@
         "ensure"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ofe2021.com/",
+          "anchorText": "#OFE2021",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://eng-ideas-agrifood.hub.inrae.fr/",
+          "anchorText": "IDEAS",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/s13593-022-00845-w",
+          "anchorText": "On-farm experimentation practices and associated farmer-researcher relationships: a systematic literature review",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S1161030122002775",
+          "anchorText": "Exploring the inner workings of design-support experiments: Lessons from 11 multi-actor experimental networks for intercrop design.",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://web.archive.org/web/20260115211541/https://www.gofen.org/ofe2023/workshops/digitag-workshop/",
+          "anchorText": "workshop",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "http://web.archive.org/web/20260217122630/https://www.gofen.org/ofe2023/",
+          "anchorText": "#OFE2023 conference",
+          "urlStatus": "archived"
+        }
+      ]
     },
     {
       "id": "OFE-171",
@@ -6766,7 +8086,14 @@
         "meet"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1002/fee.2591"
+      "pageKeywordsSource": "doi:10.1002/fee.2591",
+      "links": [
+        {
+          "url": "https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/fee.2591",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-173",
@@ -6825,7 +8152,24 @@
         "Atlantic"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "youtube-oembed"
+      "pageKeywordsSource": "youtube-oembed",
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=3mGX68LwKbM",
+          "anchorText": "Emily Murphy",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ser-c2B6FbY",
+          "anchorText": "Subha Srinivasagan",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Swi1fSl-LAs",
+          "anchorText": "Tom Allen-Stevens",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-175",
@@ -6851,7 +8195,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.youtube.com/@GlobalOFENetwork/videos",
+          "anchorText": "YouTube channel",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-176",
@@ -6901,7 +8252,14 @@
         "difm"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://confcats-siteplex.s3.us-east-1.amazonaws.com/ofpe24/ICOFPE_2024_Program_aa67d7eab0.pdf",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-177",
@@ -6949,7 +8307,19 @@
         "acceptance"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://docs.geopard.tech/geopard-tutorials/agronomy/trial-analytics",
+          "anchorText": "field trials analytics",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://geopard.tech/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-178",
@@ -6973,7 +8343,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.webofscience.com/wos/woscc/analyze-results/83998ce3-d8d9-477e-bb41-0bc94390a7c5-f0141228",
+          "anchorText": "drastically been increasing since 2020",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-179",
@@ -7025,7 +8402,34 @@
         "international"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://web.archive.org/web/20240918111222/https://www.agronomy.it/index.php/agro/article/view/2215",
+          "anchorText": "perspective on OFE in Italy",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "https://www.tandfonline.com/doi/full/10.1080/1389224X.2022.2156894",
+          "anchorText": "factors supporting farmer experimentation",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0308521X23001889",
+          "anchorText": "sheep for agroecological weed management on banana plantations",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/doi/10.1002/ael2.20130",
+          "anchorText": "Illinois",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/agj2.21560",
+          "anchorText": "Midwest and South-Central regions",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-180",
@@ -7074,7 +8478,34 @@
         "university"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://ecommons.cornell.edu/items/80d53d3c-b6f7-4cd0-855c-c3faa056ebc7",
+          "anchorText": "23 peer-reviewed papers",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/@GlobalOFENetwork",
+          "anchorText": "34 short presentation videos",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://bsky.app/profile/farmersdatalab.bsky.social/post/3lg6pukprzu2z",
+          "anchorText": "BlueSky",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_ofe2023-farmer-knowledge-activity-7287160194214600704-X9X8?utm_source=share&utm_medium=member_desktop",
+          "anchorText": "LinkedIn",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://x.com/LweeLongchamps/status/1881370153805603128",
+          "anchorText": "X",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-181",
@@ -7100,7 +8531,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/journal/14350645/specialsectioncall",
+          "anchorText": "Advances in On-Farm Agronomic Research and Participatory Learning",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-182",
@@ -7151,7 +8589,19 @@
         "collaborating"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ifall2025.web-events.fr",
+          "anchorText": "Forum on Agroecosystem Living Labs",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://ifall2025.web-events.fr/callforabstracts/",
+          "anchorText": "Call for abstracts is open",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-183",
@@ -7201,7 +8651,14 @@
         "data-intensive"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://difm.farm/news#:~:text=DIFM%20Hosted%202%20Conferences%20in%20Clearwater%2C%20FL",
+          "anchorText": "two conferences",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-184",
@@ -7275,7 +8732,14 @@
         "dedication"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://precisionag.umn.edu/renzo-negrini-named-one-top-10-outstanding-graduate-students-precision-agriculture-ispa",
+          "anchorText": "Renzo Negrini for his ICPA Graduate Student Award",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-186",
@@ -7323,7 +8787,24 @@
         "open"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://brill.com/edcollchap/book/9789086869473/BP000003.xml",
+          "anchorText": "Changing how agronomic trials are conducted: modulated on farm response surface experiments (MORSE)",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/s13194-019-0255-7",
+          "anchorText": "Farmers’ experiments and scientific methodology",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://online.ucpress.edu/elementa/article/9/1/00026/118930/Co-creation-of-knowledge-in-agroecology",
+          "anchorText": "Co-creation of knowledge in agroecology",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-187",
@@ -7353,7 +8834,19 @@
       "doi": "10.1007/s11119-024-10206-0; 10.1038/s43016-021-00222-y; 10.1038/s43016-021-00222-y",
       "publication": "Córdoba M., Paccioretti P., Balzarini M. (2024). A new method to compare treatments in unreplicated on-farm experimentation. Precision Agriculture.; Wood S.A., Bowman M. (2021). Large-scale farmer-led experiment demonstrates positive impact of cover crops on multiple soil health indicators. Nature Food.",
       "citations": 124,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://doi.org/10.1007/s11119-024-10206-0",
+          "anchorText": "https://doi.org/10.1007/s11119-024-10206-0",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.1038/s43016-021-00222-y.",
+          "anchorText": "https://doi.org/10.1038/s43016-021-00222-y.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-188",
@@ -7427,7 +8920,19 @@
         "better"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_ofe2021-ofe2023-policy-activity-7310255418696462337-0Qh6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAJbOqYBlB6yyILU3YgZ4hFvWrq_KleyzTk",
+          "anchorText": "a summary here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/s13593-025-01011-8",
+          "anchorText": "the paper here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-190",
@@ -7463,7 +8968,34 @@
         "issues"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.7298/ds08-6e43"
+      "pageKeywordsSource": "doi:10.7298/ds08-6e43",
+      "links": [
+        {
+          "url": "https://www.linkedin.com/in/mmcnee/",
+          "anchorText": "Matthew McNee",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.linkedin.com/in/myrtille-lacoste/",
+          "anchorText": "Myrtille Lacoste",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.7298/ds08-6e43",
+          "anchorText": "paper here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1uqRiqDjlOpzGZpkQ-nSJq4qCk7iYnGmK/view?usp=drive_link",
+          "anchorText": "visual summary here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://forms.gle/nWVUC5nY9vffqqt66",
+          "anchorText": "survey here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-191",
@@ -7492,7 +9024,14 @@
         "International OFE"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:31:27Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://hdl.handle.net/1813/116214",
+          "anchorText": "Check them all here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-192",
@@ -7544,7 +9083,19 @@
         "experiments"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:21:41Z",
-      "pageKeywordsSource": "doi:10.1007/s13593-022-00829-w,10.1111/ajgw.12525"
+      "pageKeywordsSource": "doi:10.1007/s13593-022-00829-w,10.1111/ajgw.12525",
+      "links": [
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/ajgw.12525",
+          "anchorText": "Why growers experiment – motivations and methods (AJGW, 2021)",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/s13593-022-00829-w",
+          "anchorText": "What drives adoption of strip trials (ASD, 2022)",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-193",
@@ -7575,7 +9126,7 @@
       "id": "OFE-194",
       "title": "New funding from UK government for farmer-led OFE",
       "summary": "ADOPT (Accelerating Development of Practices and Technologies), part of Defra’s Farming Innovation Programme and delivered by Innovate UK, supports farmer-led, on-farm trials to test and demonstrate solutions to agricultural, horticultural, and forestry challenges. For 2025/26, £20.6 million is available through £2,500 support grants for proposal development and £50K–£100K full grants for collaborative projects. Round 1 is open from 28 April to 25 June 2025 . Learn more here .",
-      "url": "https://farmpep.net/adopt",
+      "url": "https://farmpep.net/adopt/front",
       "publishDate": "2025-05-07",
       "contentType": "Community notice",
       "topics": [
@@ -7604,7 +9155,14 @@
         "collaboration request"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:41:04Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://farmpep.net/adopt/front",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-195",
@@ -7674,7 +9232,14 @@
         "pest thresholds"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:42:10Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://farmpep.net/resource/ipmworks-field-comparisons-ipm-approaches",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-196",
@@ -7721,7 +9286,19 @@
         "classes"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.eventbrite.co.uk/e/bridging-fields-how-to-work-effectively-with-farmers-tickets-1268752445719?aff=oddtdtcreator",
+          "anchorText": "webinar",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://forms.office.com/pages/responsepage.aspx?id=-rKZc65vv0mnaFhQugcXP4NjSqCI7RlHkutkSCTbsyFUQ0ZPVEw1NkFHTUhXTTcxVkZYWlpGVkU5MS4u&route=shorturl",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-197",
@@ -7775,7 +9352,19 @@
         "co-create"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://bofin.org.uk/",
+          "anchorText": "BOFIN",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.eventbrite.com/e/bofin-inspiration-day-tickets-1310215683379?aff=oddtdtcreator",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-198",
@@ -7825,7 +9414,14 @@
         "coffee breaks"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ecpa2025.upc.edu/registration/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-199",
@@ -7851,7 +9447,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/journal/14350645/specialsectioncall",
+          "anchorText": "Advances in On-Farm Agronomic Research and Participatory Learning",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-200",
@@ -7915,7 +9518,14 @@
         "discussions"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://caree.ca/submissions/",
+          "anchorText": "Learn more and submit your proposal here.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-202",
@@ -7971,13 +9581,55 @@
         "join"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://bcforagecouncil.ca/",
+          "anchorText": "BC Forage Council",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.bcclimatechangeadaptation.ca/library/guide-to-conducting-research-on-the-farm/",
+          "anchorText": "Guide to On-Farm Demonstration Research",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.bcacarn.ca/",
+          "anchorText": "BC ACARN",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCSWs37rqaLU1GAhiFGZAN6Q",
+          "anchorText": "YouTube",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=c9xFid4qfgY&list=PLW1N-ZnjfdWacSiwx7uNRYJHEIoA96cIv&index=5",
+          "anchorText": "Farmer-led research projects for climate adaptation and mitigation,",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1iILj5iPVLk&list=PLW1N-ZnjfdWbSSD9EXAui9AxIH6448o1c&index=3",
+          "anchorText": "Farmer-partnered variety trials and breeding projects",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=705MgAEV-fI&list=PLW1N-ZnjfdWbSSD9EXAui9AxIH6448o1c&index=6",
+          "anchorText": "Producer-identified research priorities for on-farm adaptation to drought and drier conditions",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=St2-huYzQIk&list=PLW1N-ZnjfdWYkjWajUoIyjYNxKBt8OdiO",
+          "anchorText": "On-farm experiment exploring the use of tarps for provision of winter snow cover",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-203",
       "title": "Agriculture and Agri-Food Canada Living Labs in British Columbia and the Peace Region",
       "summary": "Through its Agricultural Climate Solutions program, Agriculture and Agri-Food Canada supports 14 Living Labs that unite farmers, scientists, and stakeholders to test climate-smart practices on working farms. These projects focus on reducing emissions and boosting soil carbon. The British Columbia and Peace Region Living Labs represent the westernmost sites in this national network. British Columbia Living Lab : Led by the Investment Agriculture Foundation of BC , this lab partners with 10 commodity groups and over 35 farms across the province. It focuses on sector-specific trials, socio-economic analysis, and extensive knowledge sharing through videos, webinars, and factsheets . Peace Region Living Lab : Led by the Peace Region Forage Seed Association , this lab collaborates with seven producer groups and 58 farms in northern BC and Alberta. It targets improved productivity and environmental resilience, with a strong focus on extension through podcasts, videos , and producer perspectives .",
-      "url": "http://web.archive.org/web/20260610071447/https://iafbc.ca/",
+      "url": "https://agriculture.canada.ca/en/environment/climate-change/agricultural-climate-solutions/agricultural-climate-solutions-living-labs",
       "publishDate": "2025-06-03",
       "contentType": "Project or network profile",
       "topics": [
@@ -8001,7 +9653,7 @@
       "sourceNewsletter": "OFE-C Info No. 38",
       "createdAt": "2025-06-03",
       "updatedAt": "2026-09-04T00:00:00Z",
-      "urlStatus": "archived",
+      "urlStatus": "live",
       "newsletterNo": 38,
       "doi": null,
       "publication": null,
@@ -8030,7 +9682,49 @@
         "infrastructure"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://agriculture.canada.ca/en/environment/climate-change/agricultural-climate-solutions/agricultural-climate-solutions-living-labs",
+          "anchorText": "Agricultural Climate Solutions",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://bclivinglab.ca/",
+          "anchorText": "British Columbia Living Lab",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://web.archive.org/web/20260610071447/https://iafbc.ca/",
+          "anchorText": "Investment Agriculture Foundation of BC",
+          "urlStatus": "archived"
+        },
+        {
+          "url": "https://bclivinglab.ca/areas-of-focus/",
+          "anchorText": "videos, webinars, and factsheets",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://peacelivinglab.ca/about/",
+          "anchorText": "Peace Region Living Lab",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://www.peaceforageseed.ca/index.html",
+          "anchorText": "Peace Region Forage Seed Association",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://peacelivinglab.ca/podcasts-videos/",
+          "anchorText": "podcasts, videos",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://peacelivinglab.ca/resources/",
+          "anchorText": "producer perspectives",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-204",
@@ -8087,7 +9781,19 @@
         "ground join"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://organicbc.org/",
+          "anchorText": "Organic BC",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=PLG_QgvrXNq0u8vHPzMYd6Q9s1pFhy6Dlc",
+          "anchorText": "on-farm cover crop trials",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-205",
@@ -8162,7 +9868,14 @@
         "pass"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.ivvy.com.au/event/CA2025/welcome.html?fbclid=IwZXh0bgNhZW0CMTAAAR2ZWd4O6ifUxk1KYBDZpPdC8Y-vveLOD_Iexs4sFBLZ_efdy6QCADAg-30_aem_rfJ4DWKEChuaje00pa9-LQ",
+          "anchorText": "Link to the event",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-207",
@@ -8215,7 +9928,14 @@
         "root galls"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://wagrower.vegetableswa.com.au/collections/wa-grower-winter2025/survey-of-nematodes-and-grower-management-on-tomato-and-capsicum",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-208",
@@ -8269,7 +9989,14 @@
         "single cordon"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://wagrower.vegetableswa.com.au/collections/wa-grower-winter2025/wa-narrow-orchard-systems-nos-project-update-initial-tree-tra",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-209",
@@ -8299,7 +10026,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://experience.arcgis.com/experience/e38618a0d3bb4a959c785a34e0615450",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-210",
@@ -8353,7 +10087,19 @@
         "participants"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.dpird.wa.gov.au/businesses/grants-and-support/southern-rangelands-revitalisation-program/#:~:text=The Southern Rangelands Revitalisation Program (SRRP) supports pastoralists to investigate,rangeland conditions and livestock profitability.",
+          "anchorText": "Southern Rangelands Revitalization Project",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://futurebeef.com.au/resources/rain-ready-rangelands/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-211",
@@ -8406,7 +10152,14 @@
         "sacrificial canes"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:45:13Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.utas.edu.au/__data/assets/pdf_file/0010/1822186/Guideline_Producer-Led-Trials-Guide_2025.pdf",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-212",
@@ -8480,7 +10233,24 @@
         "produ"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.infoteca.cnptia.embrapa.br/infoteca/handle/doc/1150179",
+          "anchorText": "Experimentação on-farm na agricultura de precisão",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.embrapa.br/en/busca-de-publicacoes/-/publicacao/1169415/agricultura-de-precisao-um-novo-olhar-na-era-digital",
+          "anchorText": "Agricultura de Precisão: Um Novo Olhar na Era Digital",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.youtube.com/watch?app=desktop&v=cdy55hMRckM",
+          "anchorText": "video overview",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-214",
@@ -8531,7 +10301,14 @@
         "professores"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://asbraap.org/conbap/",
+          "anchorText": "proceedings",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-215",
@@ -8583,7 +10360,14 @@
         "cornell"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ecommons.cornell.edu/items/80d53d3c-b6f7-4cd0-855c-c3faa056ebc7",
+          "anchorText": "OFE2023 proceedings",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-216",
@@ -8623,7 +10407,14 @@
         "farmer-led"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "youtube-oembed"
+      "pageKeywordsSource": "youtube-oembed",
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=JDmX9wLHBmQ",
+          "anchorText": "the story of Sean Dengler",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-217",
@@ -8674,7 +10465,14 @@
         "error occurred"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.lancasterfarming.com/farming-news/field-crops/turning-field-trials-into-lasting-learning/article_3b9a0a83-f57a-4a63-80d8-def23967beaf.html",
+          "anchorText": "Lancaster Farming",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-218",
@@ -8700,7 +10498,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.linkedin.com/in/prabhu-govindasamy-6b847a58/",
+          "anchorText": "Prabhu Govindasamy",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-219",
@@ -8751,7 +10556,14 @@
         "page"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ifsa2026.sciencesconf.org/resource/page/id/5",
+          "anchorText": "Abstract submission is open until Oct. 15 th",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-220",
@@ -8807,7 +10619,19 @@
         "agriculture"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.icar-crida.res.in/FFP.html",
+          "anchorText": "Farmer FIRST Programme",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://epubs.icar.org.in/index.php/IndFarm/article/view/163720",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-221",
@@ -8843,7 +10667,19 @@
         "view"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:31:27Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://epubs.icar.org.in/index.php/IndHort/article/view/163661/59064",
+          "anchorText": "IoT-enabled soil moisture sensors",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0304423825000330",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-222",
@@ -8895,7 +10731,14 @@
         "publication"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://doi.org/10.33545/2618060X.2024.v7.i10Sf.1802",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-223",
@@ -8945,7 +10788,14 @@
         "international e-magazine"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://vigyanvarta.in/adminpanel/upload_doc/VV_0625_32.pdf",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-224",
@@ -9014,7 +10864,14 @@
         "plant breeding"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:17:40Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://rdcu.be/eQeMN",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-226",
@@ -9041,7 +10898,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://miro.com/app/board/uXjVJDrdPec=/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-227",
@@ -9092,7 +10956,14 @@
         "latest"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://simone.nweurope.eu",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-228",
@@ -9143,7 +11014,14 @@
         "Soil Deal"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://soilcrates.eu",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-229",
@@ -9194,7 +11072,14 @@
         "practical"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.pfn-hessen.de/portfolio-item/allfacts/?lang=en",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-230",
@@ -9231,7 +11116,14 @@
         "on-farm"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "youtube-oembed"
+      "pageKeywordsSource": "youtube-oembed",
+      "links": [
+        {
+          "url": "https://youtu.be/yB9bLRkofxo?si=2GeuctFgOoN7hmfW",
+          "anchorText": "Check out Erin Jackson’s short video",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-231",
@@ -9308,7 +11200,14 @@
         "earthworm count"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:47:10Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.utas.edu.au/tia/research/research-projects/project/livestock-production/dairy-high-2",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-233",
@@ -9359,7 +11258,14 @@
         "crop load"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:48:18Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.utas.edu.au/about/news-and-stories/articles/2025/research-driven-thinning-gives-apple-growers-the-edge",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-234",
@@ -9409,7 +11315,14 @@
         "agricultural"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://soilcrc.com.au/resources/risk-reward-tool-writing-guide-and-user-documentation/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-235",
@@ -9460,13 +11373,20 @@
         "innovations"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://simone.nweurope.eu/blog/simone-news-73/explore-innovative-farming-methods-through-on-farm-testing-aiming-to-improve-the-sustainability-and-performance-of-farms-170",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-236",
       "title": "Lunch & Learn: Insights from the APEN Conference",
       "summary": "Read the blog and watch the video here or listen to the podcast of Denise and John from Enablers of Change discuss their insights from the Australasia-Pacific Extension Network (APEN) Conference held in Australia, October 2025. Hot topics included Human-AI partnerships.",
-      "url": "https://www.enablersofchange.com.au/reflections-on-apen-2025/",
+      "url": "https://www.enablersofchange.com.au/",
       "publishDate": "2025-12-09",
       "contentType": "Podcast",
       "topics": [
@@ -9511,7 +11431,14 @@
         "extension practitioners"
       ],
       "pageKeywordsUpdatedAt": "2026-09-15T01:21:24Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.enablersofchange.com.au/",
+          "anchorText": "Enablers of Change",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-237",
@@ -9553,7 +11480,14 @@
         "coverage"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1007/s11119-025-10280-y"
+      "pageKeywordsSource": "doi:10.1007/s11119-025-10280-y",
+      "links": [
+        {
+          "url": "https://doi.org/10.1007/s11119-025-10280-y",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-238",
@@ -9598,7 +11532,14 @@
         "digital inclusion"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:49:12Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.sciencedirect.com/special-issue/327478/wise-agricultural-systems-a-systems-approach-to-digital-transformation",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-239",
@@ -9674,13 +11615,20 @@
         "county"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://growingafrica.pub/on-farm-experimentation-process-triggers-kenyan-farmers-zeal-to-test-technologies-in-maize-systems/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-241",
       "title": "OCP School Labs: Mobile Soil Science Supporting Farmer Learning",
       "summary": "OCP Africa’s School Lab initiative brings soil testing directly to farmers’ fields through mobile laboratories, generating field-specific diagnostics that farmers can use to test and adapt nutrient management practices. By combining soil sampling, geospatial mapping, and farmer training, the program supports learning under real farming conditions rather than standardized recommendations. Readers interested in the OFE aspects can see Section 3, “ Knowledge Creation ” of the 2024 Annual Report for details on the soil testing and feedback process, and examples of how results are shared with farmers across multiple sites .",
-      "url": "https://www.ocpafrica.com/rapport2024/KNOWLEDGE-CREATION.html",
+      "url": "https://www.ocpafrica.com/rapport2024/KNOWLEDGE-CREATION.html?__cf_chl_tk=6ACPJQ7PDFuMU0Gx4yCJ2KwuVEAAez10mQjpGt2J5PU-1770301270-1.0.1.1-2xC39We64TcivlkjfF87d42uNgNiAvevjnrWDYJrAjc",
       "publishDate": "2026-02-09",
       "contentType": "Project or network profile",
       "topics": [
@@ -9738,7 +11686,19 @@
         "agro-ecological zones"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T21:59:55Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.ocpafrica.com/rapport2024/KNOWLEDGE-CREATION.html?__cf_chl_tk=6ACPJQ7PDFuMU0Gx4yCJ2KwuVEAAez10mQjpGt2J5PU-1770301270-1.0.1.1-2xC39We64TcivlkjfF87d42uNgNiAvevjnrWDYJrAjc",
+          "anchorText": "Knowledge Creation",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.ocpafrica.com/rapport2024/KNOWLEDGE-CREATION.html?__cf_chl_tk=6ACPJQ7PDFuMU0Gx4yCJ2KwuVEAAez10mQjpGt2J5PU-1770301270-1.0.1.1-2xC39We64TcivlkjfF87d42uNgNiAvevjnrWDYJrAjc#page=36",
+          "anchorText": "examples of how results are shared with farmers across multiple sites",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-242",
@@ -9788,7 +11748,14 @@
         "data"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.beckshybrids.com/research/practical-farm-research",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-243",
@@ -9830,7 +11797,14 @@
         "scientific"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1002/agj2.70263"
+      "pageKeywordsSource": "doi:10.1002/agj2.70263",
+      "links": [
+        {
+          "url": "https://doi.org/10.1002/agj2.70263",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-244",
@@ -9855,7 +11829,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": true
+      "expired": true,
+      "links": [
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdJpS94B5D26hvnilcmzwhRbTEwFv4t0ENezwLrnXO5_uMGoA/viewform",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-245",
@@ -9953,7 +11934,19 @@
         "female"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.3389/fsufs.2026.1654751"
+      "pageKeywordsSource": "doi:10.3389/fsufs.2026.1654751",
+      "links": [
+        {
+          "url": "https://hdl.handle.net/10568/140709",
+          "anchorText": "https://hdl.handle.net/10568/140709",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://doi.org/10.3389/fsufs.2026.1654751",
+          "anchorText": "https://doi.org/10.3389/fsufs.2026.1654751",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-248",
@@ -10003,7 +11996,14 @@
         "innovation bundles"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://stibs.alliance.cgiar.org/",
+          "anchorText": "https://stibs.alliance.cgiar.org/",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-249",
@@ -10043,7 +12043,19 @@
         "toolbox"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T22:08:45Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://hdl.handle.net/10568/148720",
+          "anchorText": "https://hdl.handle.net/10568/148720",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://hdl.handle.net/10568/179802",
+          "anchorText": "https://hdl.handle.net/10568/179802",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-250",
@@ -10085,7 +12097,19 @@
         "household income"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T22:08:45Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://hdl.handle.net/10568/179510",
+          "anchorText": "https://hdl.handle.net/10568/179510",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://hdl.handle.net/10568/169786",
+          "anchorText": "https://hdl.handle.net/10568/169786",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-251",
@@ -10136,7 +12160,14 @@
         "knowledge"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1002/agj2.70276"
+      "pageKeywordsSource": "doi:10.1002/agj2.70276",
+      "links": [
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/doi/10.1002/agj2.70276",
+          "anchorText": "https://acsess.onlinelibrary.wiley.com/doi/10.1002/agj2.70276",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-252",
@@ -10217,7 +12248,14 @@
         "effet"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://cerom.qc.ca/vitrine-de-demonstration-sur-lutilisation-des-outils-decisionnels-concernant-la-gestion-efficace-de-lazote-a-la-ferme-et-la-reduction-de-n2o/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-254",
@@ -10272,7 +12310,14 @@
         "donn"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://agprecision.ca/",
+          "anchorText": "To learn more.",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-255",
@@ -10309,7 +12354,24 @@
         "working"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://difm.farm",
+          "anchorText": "DIFM project",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/s11119-023-09995-7",
+          "anchorText": "Adhikari et al. 2023",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://cerom.qc.ca/delimitation-de-zones-de-gestion-de-lazote-via-des-essais-pluriannuels-assistes-par-lagriculture-de-precision/",
+          "anchorText": "Click here to learn more",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-256",
@@ -10357,7 +12419,14 @@
         "farmers world"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.frontiersin.org/research-topics/79047/farmer-centric-on-farm-experimentation-enhanced-by-digital-agronomy",
+          "anchorText": "Learn more and submit your work",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-257",
@@ -10437,7 +12506,24 @@
         "corn silage"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://nmsp.cals.cornell.edu/NYOnFarmResearchPartnership/",
+          "anchorText": "On-Farm Research Partnership",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://nmsp.cals.cornell.edu/",
+          "anchorText": "Nutrient Management Spear Program",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://nmsp.cals.cornell.edu/NYOnFarmResearchPartnership/index.html",
+          "anchorText": "read here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-259",
@@ -10488,7 +12574,24 @@
         "table"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://nmsp.cals.cornell.edu/publications/factsheets/factsheet124.pdf",
+          "anchorText": "single-strip spatial evaluation approach",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/agj2.70264",
+          "anchorText": "journal",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://blogs.cornell.edu/whatscroppingup/2025/12/22/a-new-webtool-to-support-on-farm-decision-making-with-single-strip-evaluation-trials/",
+          "anchorText": "extension",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-260",
@@ -10542,7 +12645,19 @@
         "Irias"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://nmsp.cals.cornell.edu/NYOnFarmResearchPartnership/Value_of_Manure.html",
+          "anchorText": "Value and Power of Manure",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://blogs.cornell.edu/whatscroppingup/2026/04/01/in-a-weather-challenged-season-manure-offset-nitrogen-fertilizer-needs-and-increased-corn-silage-and-grain-yields-value-of-manure-project-2025-update/",
+          "anchorText": "read here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-261",
@@ -10597,7 +12712,24 @@
         "Marcaida III"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://nmsp.cals.cornell.edu/NYOnFarmResearchPartnership/DronesforMgt.html",
+          "anchorText": "yield prediction",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://nmsp.cals.cornell.edu/NYOnFarmResearchPartnership/DataForAccurateMaps.html",
+          "anchorText": "yield data processing",
+          "urlStatus": "live"
+        },
+        {
+          "url": "http://nmsp.cals.cornell.edu/NYOnFarmResearchPartnership/YieldStabilityZones.html",
+          "anchorText": "yield stability zones",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-262",
@@ -10650,7 +12782,14 @@
         "ketterings czymmek"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "http://nmsp.cals.cornell.edu/NYOnFarmResearchPartnership/DairySustainabilityIndicators.html",
+          "anchorText": "Learn more",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-263",
@@ -10697,7 +12836,14 @@
         "climate change"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.frontiersin.org/research-topics/79047/farmer-centric-on-farm-experimentation-enhanced-by-digital-agronomy",
+          "anchorText": "open call for OFE papers",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-264",
@@ -10746,7 +12892,14 @@
         "presentations science"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.sciencesocieties.org/canvas/submit/oral",
+          "anchorText": "Visit this page",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-265",
@@ -10796,7 +12949,19 @@
         "accepted credit"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.ispag.org/icpa/registration",
+          "anchorText": "Register Today!",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://ispag.org/icpa/registration/addon/",
+          "anchorText": "Add On Registration Form",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-266",
@@ -10841,7 +13006,14 @@
         "crop"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1080/1343943X.2026.2664854"
+      "pageKeywordsSource": "doi:10.1080/1343943X.2026.2664854",
+      "links": [
+        {
+          "url": "https://doi.org/10.1080/1343943X.2026.2664854",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-267",
@@ -10889,7 +13061,19 @@
         "broader functionality"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:31:27Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ecommons.cornell.edu/collections/6adc0a8a-62f0-411d-b07b-3763439acc09/search",
+          "anchorText": "here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://ofe2021.com/proceedings.html",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-268",
@@ -10939,7 +13123,14 @@
         "process farmers"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.frontiersin.org/research-topics/79047/farmer-centric-on-farm-experimentation-enhanced-by-digital-agronomy",
+          "anchorText": "Frontiers Research Topic",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-269",
@@ -11014,7 +13205,14 @@
         "management episode"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://podcasts.apple.com/au/podcast/what-happens-when-you-bury-underpants-in-your-backyard/id1896322692?i=1000773815334",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-271",
@@ -11066,7 +13264,19 @@
         "chat"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://monash.zoom.us/rec/play/sRo7GSxlEmvY_5wM1NPxZ7eJ9wlbHUSAxhg8uMoJCM0f5Ot60TGd66FVLPLVBPciu2lJifMmuR6r87M.n3Lgrv5R-8_9jNCf?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&oldStyle=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fmonash.zoom.us%2Frec%2Fshare%2FNX21S484Mo_Lah7hCM8TrFz6vWjFnWk3L25nxNMqB9DNLz7H44Ue6bFTZkHccj_R.CXKwqtJ3ilTTfd3w",
+          "anchorText": "Rural Landholder Survey",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.mla.com.au/news-and-events/industry-news/the-right-stocking-rate-starts-with-a-soil-test/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-272",
@@ -11118,7 +13328,19 @@
         "fact sheet"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://vas.soilcrc.com.au/background",
+          "anchorText": "here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://data.soilcrc.com.au/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-273",
@@ -11163,7 +13385,19 @@
         "record sheet"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T22:02:27Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://soilsforlife.org.au/monitoring-soil-health/",
+          "anchorText": "soil health",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://soilsforlife.org.au/",
+          "anchorText": "website",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-274",
@@ -11213,7 +13447,14 @@
         "sponsorship options"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://conferenceco-ssa26.eventsair.site/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-275",
@@ -11316,7 +13557,14 @@
         "ongoing"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.apni.net/empower-ofe/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-278",
@@ -11365,7 +13613,14 @@
         "farming"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.apni.net/2025/06/25/reframing-innovation-in-african-agriculture-why-ofe-is-the-game-changer/",
+          "anchorText": "Find out",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-279",
@@ -11415,7 +13670,14 @@
         "african"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.apni.net/2025/09/10/from-the-ground-up-how-farmers-are-shaping-the-future-of-agriculture-in-kenya/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-280",
@@ -11447,7 +13709,14 @@
       "doi": null,
       "publication": null,
       "citations": 0,
-      "expired": false
+      "expired": false,
+      "links": [
+        {
+          "url": "https://drive.google.com/file/d/1atwNuLRuFJA4Wy46ElkqjkUmiCmG_4Je/view?usp=sharing",
+          "anchorText": "video",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-281",
@@ -11492,7 +13761,14 @@
         "knowledge"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T20:18:03Z",
-      "pageKeywordsSource": "doi:10.1002/agj2.70276"
+      "pageKeywordsSource": "doi:10.1002/agj2.70276",
+      "links": [
+        {
+          "url": "https://doi.org/10.1002/agj2.70276",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-282",
@@ -11539,7 +13815,14 @@
         "systems"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.frontiersin.org/research-topics/79047/farmer-centric-on-farm-experimentation-enhanced-by-digital-agronomy",
+          "anchorText": "special issue on farmer-centric on-farm experimentation",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-283",
@@ -11586,13 +13869,20 @@
         "systems"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.frontiersin.org/research-topics/79047/farmer-centric-on-farm-experimentation-enhanced-by-digital-agronomy",
+          "anchorText": "Farmer-centric On-farm Experimentation Enhanced by Digital Agronomy",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-284",
       "title": "Inspiring from Other Sectors: What Medical Case Reporting Can Teach OFE",
       "summary": "Replace \" clinical case report \" with \" on-farm experiment \" and this review maps almost directly onto OFE: detecting novelties, generating hypotheses, in-depth narrative understanding, and value where controlled trials are impossible. The limitations will also sound familiar. Though Pearl's work on causal inference ( The Book of Why ) would now challenge the claim that case reports cannot establish cause-effect relationships. See a post on this here and the full paper here .",
-      "url": "https://www.hachettebookgroup.com/titles/judea-pearl/the-book-of-why/9780465097616/?lens=basic-books",
+      "url": "https://link.springer.com/article/10.1186/1756-0500-7-264",
       "publishDate": "2026-09-01",
       "contentType": "Article or paper",
       "topics": [
@@ -11633,7 +13923,24 @@
         "correlation"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://www.hachettebookgroup.com/titles/judea-pearl/the-book-of-why/9780465097616/?lens=basic-books",
+          "anchorText": "The Book of Why",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/myrtille-lacoste_onfarmexperimentation-agriculture-innovation-activity-7467226504897196032-90sa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAJbOqYBlB6yyILU3YgZ4hFvWrq_KleyzTk",
+          "anchorText": "post on this here",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1186/1756-0500-7-264",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-285",
@@ -11684,7 +13991,14 @@
         "empowers curious"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://practicalfarmers.org/programs/farmer-led-research/cooperators-program/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-286",
@@ -11735,7 +14049,14 @@
         "cereals oilseeds"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ahdb.org.uk/connecting-arable-farmers-with-on-farm-research-opportunities-farmer-marketplace",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-287",
@@ -11786,7 +14107,14 @@
         "price"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T19:45:49Z",
-      "pageKeywordsSource": "scraped-page"
+      "pageKeywordsSource": "scraped-page",
+      "links": [
+        {
+          "url": "https://ahdb.org.uk/innovative-farmers-field-labs",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     },
     {
       "id": "OFE-288",
@@ -11830,7 +14158,14 @@
         "causality"
       ],
       "pageKeywordsUpdatedAt": "2026-09-14T22:04:23Z",
-      "pageKeywordsSource": "manual"
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://cals.cornell.edu/news/2026/08/louis-longchamps-lab-brings-scientific-tools-farmer-led-experimentation",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
     }
   ]
 }
