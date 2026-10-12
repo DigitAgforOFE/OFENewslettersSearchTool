@@ -71,5 +71,27 @@
    "note": "Manual completion of the pageKeywords punch-list: worked through the 31 manual-review items one at a time (user pasted page/PDF content per item, or found a corrected URL; a few were recovered directly -- two Wayback-Machine PDFs on retry, two CGSpace pages that had been transiently rate-limited, one OSF paper via a self-contained PDF, and gofen.org's revamped conference page once the new URL was known). Ends at 223 of 242 URLs enriched; the remaining 19 are unchanged not-worth-visiting items plus 3 newly confirmed dead ends (OFE-181, OFE-199: page gone, not archived, unrecoverable via search; OFE-187: cited papers' metadata adds nothing beyond what the summary already quotes). Along the way: fixed a real accent-folding gap in app/search.js (accented keywords like \"Gesan-Guiziou\" now match their unaccented spelling too); corrected OFE-194's and OFE-236's stored URLs (dead path / Mimecast wrapper); updated OFE-147 and OFE-152 to gofen.org's new URL structure; added doi/publication to 6-7 items where the source revealed it; added locations/croppingSystems to 5 items. Added scripts/check_page_keywords.py (a consistency checker for the enrichment: catches duplicate/redundant keywords, orphaned metadata pairing, malformed DOIs, leftover tracking URLs) and scripts/enrichment_changelog.json (full per-item diff against the pre-enrichment baseline)."
   },
   "note": "Search-enrichment complete: pageKeywords on 223 of 242 URLs. Remaining 19 are confirmed dead ends, not gaps. See scripts/enrichment_changelog.json for the full diff and scripts/check_page_keywords.py for the consistency checks run before this was considered done."
+ },
+ {
+  "timestamp": "2026-10-11T00:00:00Z",
+  "itemCount": 280,
+  "missingUrl": 34,
+  "expiredCount": 10,
+  "snapshotFile": "database-2026-10.json",
+  "changeReport": {
+   "added": [
+    "OFE-289",
+    "OFE-290",
+    "OFE-291",
+    "OFE-292",
+    "OFE-293"
+   ],
+   "removed": [],
+   "updated": [
+    "OFE-283"
+   ],
+   "note": "Added OFE-C Info No. 52 (5 Oct 2026) directly to database.json (Notion no longer in the pipeline). 5 new items; the Frontiers special-issue call re-ran verbatim, so it was not added again: OFE-283 gained alsoAppearedIn ['OFE-C Info No. 52']. Links unwrapped from Outlook SafeLinks. pageKeywords added manually for OFE-291 and OFE-292; SPAA and dotdigital pages block automated fetching, so OFE-290 and OFE-293 have none. Embeddings for the 5 new items computed from the exported data/model2vec table (identical to model2vec output on all 275 existing items) since Hugging Face was unreachable."
+  },
+  "note": "Monthly update: Info No. 52."
  }
 ]

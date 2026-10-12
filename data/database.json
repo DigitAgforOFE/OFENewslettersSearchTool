@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-04T00:00:00Z",
-  "version": "2026-09-04",
-  "count": 275,
+  "generatedAt": "2026-10-11T00:00:00Z",
+  "version": "2026-10-11",
+  "count": 280,
   "items": [
     {
       "id": "OFE-001",
@@ -13839,7 +13839,7 @@
       "people": [],
       "sourceNewsletter": "OFE-C Info No. 51",
       "createdAt": "2026-09-01",
-      "updatedAt": "2026-09-04T00:00:00Z",
+      "updatedAt": "2026-10-11T00:00:00Z",
       "urlStatus": "live",
       "newsletterNo": 51,
       "doi": null,
@@ -13876,6 +13876,9 @@
           "anchorText": "Farmer-centric On-farm Experimentation Enhanced by Digital Agronomy",
           "urlStatus": "live"
         }
+      ],
+      "alsoAppearedIn": [
+        "OFE-C Info No. 52"
       ]
     },
     {
@@ -14162,6 +14165,231 @@
       "links": [
         {
           "url": "https://cals.cornell.edu/news/2026/08/louis-longchamps-lab-brings-scientific-tools-farmer-led-experimentation",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
+    },
+    {
+      "id": "OFE-289",
+      "title": "Co-editor of the Month Liz Jackson",
+      "summary": "Thank you my co-editor of the month: Dr. Liz Jackson, Associate Professor of Supply Chain Management & Logistics, Curtin University, Australia.",
+      "url": null,
+      "publishDate": "2026-10-05",
+      "contentType": "Community notice",
+      "topics": [
+        "Community building"
+      ],
+      "locations": [],
+      "croppingSystems": [],
+      "people": [
+        "Liz Jackson",
+        "Curtin University"
+      ],
+      "sourceNewsletter": "OFE-C Info No. 52",
+      "createdAt": "2026-10-05",
+      "updatedAt": "2026-10-11T00:00:00Z",
+      "urlStatus": "unavailable",
+      "newsletterNo": 52,
+      "doi": null,
+      "publication": null,
+      "citations": 0,
+      "expired": false
+    },
+    {
+      "id": "OFE-290",
+      "title": "Can OFE go beyond agronomy and be about grain market access?",
+      "summary": "The Society of Precision Agriculture Australia (SPAA) held two very successful events in 2026. In March, the Association held its SPAA Precision Ag Expo 2026 at University of Southern Queensland but, more recently, SPAA held its 2026 Australian Precision Ag Symposium at the University of Sydney’s Camperdown Campus on 31 August – 1 September. Many speakers (their presentations are available here) discussed OFE in their research. Of particular interest may be Professor David Lamb’s presentation that discussed OFE principles to investigate a Digital Grain Passport. Farmers participated in at-scale research to investigate how their grain data can be securely shared with supply chain partners to improve trade transparency and product credentials. Professor Lamb concluded by saying “The technology now exists. The challenge is industry adoption, governance and trust”.",
+      "url": "https://www.spaa.com.au/events-spaa/2026-australasian-symposium/",
+      "publishDate": "2026-10-05",
+      "contentType": "Event",
+      "topics": [
+        "Data governance & sharing",
+        "Farmer engagement & co-design"
+      ],
+      "locations": [
+        "Australia"
+      ],
+      "croppingSystems": [
+        "Cereals"
+      ],
+      "people": [
+        "David Lamb",
+        "Society of Precision Agriculture Australia",
+        "University of Sydney",
+        "University of Southern Queensland"
+      ],
+      "sourceNewsletter": "OFE-C Info No. 52",
+      "createdAt": "2026-10-05",
+      "updatedAt": "2026-10-11T00:00:00Z",
+      "urlStatus": "live",
+      "newsletterNo": 52,
+      "doi": null,
+      "publication": null,
+      "citations": 0,
+      "expired": false,
+      "links": [
+        {
+          "url": "https://www.spaa.com.au/events-spaa/2026-australasian-symposium/",
+          "anchorText": "Society of Precision Agriculture Australia",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.spaa.com.au/events-spaa/2026-australasian-symposium/",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
+    },
+    {
+      "id": "OFE-291",
+      "title": "From Shellfish to Grains: A Decade of On-Farm Digital Innovation at Food Agility CRC",
+      "summary": "The Food Agility CRC has been a leader in Australian innovation and digital agricultural research for the past 10 years. Now at the end of its term as a co-operative research centre (CRC), the CRC will host its final annual Congress on 7 October in Canberra. The CRC’s success of 60 research projects with over 120 partners features numerous OFE projects including production of shellfish, pork, grains and beef whereby digital systems are tested at-scale in Australian farming systems to improve aspects such as environmental sustainability, production and supply chain efficiencies.",
+      "url": "https://www.foodagility.com/food-agility-congress",
+      "publishDate": "2026-10-05",
+      "contentType": "Project or network profile",
+      "topics": [
+        "Networks & platforms",
+        "AgTech & AI",
+        "Sustainability/SDGs"
+      ],
+      "locations": [
+        "Australia"
+      ],
+      "croppingSystems": [],
+      "people": [
+        "Food Agility CRC"
+      ],
+      "sourceNewsletter": "OFE-C Info No. 52",
+      "createdAt": "2026-10-05",
+      "updatedAt": "2026-10-11T00:00:00Z",
+      "urlStatus": "live",
+      "newsletterNo": 52,
+      "doi": null,
+      "publication": null,
+      "citations": 0,
+      "expired": false,
+      "pageKeywords": [
+        "Food Agility Congress 2026",
+        "Rangelands Carbon",
+        "Foragecaster",
+        "Transforming Australian Shellfish Production",
+        "AgriWebb",
+        "AACo",
+        "Trust Provenance",
+        "Harmony Agriculture & Food Co",
+        "Curtin University",
+        "Wagga Wagga"
+      ],
+      "pageKeywordsUpdatedAt": "2026-10-11T00:00:00Z",
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://www.foodagility.com/",
+          "anchorText": "Food Agility CRC",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://www.foodagility.com/food-agility-congress",
+          "anchorText": "Congress",
+          "urlStatus": "live"
+        }
+      ]
+    },
+    {
+      "id": "OFE-292",
+      "title": "Machinery Dealerships as OFE Partners: A Podcast on Getting More from Your Digital Systems",
+      "summary": "Mechanisation is an unsung hero in digital farm systems; without it, we have no grain production in much of the developed world. This recent podcast from Australia’s Grains Research and Development Corporation provides insights on how producers can collaborate with machinery dealerships to make the most of their OFE and digital systems. Listen to the podcast here.",
+      "url": "https://grdc.com.au/news-and-media/audio/podcast/2026/grain-automate-dealer-download-where-farmers-get-stuck",
+      "publishDate": "2026-10-05",
+      "contentType": "Podcast",
+      "topics": [
+        "AgTech & AI",
+        "Farmer engagement & co-design"
+      ],
+      "locations": [
+        "Australia"
+      ],
+      "croppingSystems": [
+        "Cereals"
+      ],
+      "people": [
+        "Grains Research and Development Corporation"
+      ],
+      "sourceNewsletter": "OFE-C Info No. 52",
+      "createdAt": "2026-10-05",
+      "updatedAt": "2026-10-11T00:00:00Z",
+      "urlStatus": "live",
+      "newsletterNo": 52,
+      "doi": null,
+      "publication": null,
+      "citations": 0,
+      "expired": false,
+      "pageKeywords": [
+        "Grain Automate",
+        "GRDC",
+        "SPAA",
+        "Boekeman Machinery",
+        "RDO Equipment",
+        "Conor McGuckian",
+        "Andrew Speed",
+        "Jayne Cuddihy",
+        "AgXeed",
+        "John Deere",
+        "AutoTrac",
+        "Darling Downs",
+        "precision farming",
+        "autosteer"
+      ],
+      "pageKeywordsUpdatedAt": "2026-10-11T00:00:00Z",
+      "pageKeywordsSource": "manual",
+      "links": [
+        {
+          "url": "https://grdc.com.au/",
+          "anchorText": "Grains Research and Development Corporation",
+          "urlStatus": "live"
+        },
+        {
+          "url": "https://grdc.com.au/news-and-media/audio/podcast/2026/grain-automate-dealer-download-where-farmers-get-stuck",
+          "anchorText": "here",
+          "urlStatus": "live"
+        }
+      ]
+    },
+    {
+      "id": "OFE-293",
+      "title": "Data-Driven Husbandry: A Farmer Leading the Way",
+      "summary": "Lynley Anderson, stud principal at Anderson Poll Merinos in south-west Western Australia, is a compelling example of a farmer who has made continuous improvement through data a core part of how she operates. Using RFID technology (known as “eID” in Australia, or electronic identification) to track individual animal performance, she generates her own on-farm evidence to drive decisions on genetics, husbandry, and reproductive performance. The approach mirrors what farmer-centric OFE is about: a farmer setting the questions, collecting the data, and using the results to improve their own system. Read the full article and watch the video here.",
+      "url": "https://r3.dotdigital-pages.com/p/4PKF-FOQ/the-unexpected-benefits-of-digitisation",
+      "publishDate": "2026-10-05",
+      "contentType": "Article or paper",
+      "topics": [
+        "Farmer engagement & co-design",
+        "AgTech & AI"
+      ],
+      "locations": [
+        "Australia",
+        "Western Australia"
+      ],
+      "croppingSystems": [
+        "Livestock"
+      ],
+      "people": [
+        "Lynley Anderson",
+        "Anderson Poll Merinos"
+      ],
+      "sourceNewsletter": "OFE-C Info No. 52",
+      "createdAt": "2026-10-05",
+      "updatedAt": "2026-10-11T00:00:00Z",
+      "urlStatus": "live",
+      "newsletterNo": 52,
+      "doi": null,
+      "publication": null,
+      "citations": 0,
+      "expired": false,
+      "links": [
+        {
+          "url": "https://r3.dotdigital-pages.com/p/4PKF-FOQ/the-unexpected-benefits-of-digitisation",
           "anchorText": "here",
           "urlStatus": "live"
         }
